@@ -1,6 +1,3 @@
-// Import database schema
-require('./database-models');
-
 var config  = require('./configuration.js')
 var express = require('express');
 var http    = require('http');
@@ -10,16 +7,16 @@ var app     = express();
 
 // Configure multi-language
 i18n.configure({
-    locales: config.getLanguageSet(),
-    directory: __dirname + config.getLanguageDirectory()
+    locales: config.get('langSet'),
+    directory: __dirname + config.get('langDir')
 });
 
 // Environments
 app.configure(function(){
-  app.set('address', config.getAddress());
-  app.set('port', process.env.PORT || config.getPort());
-  app.set('views', __dirname + config.getViewsDirectory());
-  app.set('view engine', config.getViewsEngine());
+  app.set('address', config.get('address'));
+  app.set('port', process.env.PORT || config.get('port'));
+  app.set('views', __dirname + config.get('viewsDir'));
+  app.set('view engine', 'jade');
   app.use(express.favicon());
   app.use(express.logger('dev'));
   app.use(express.bodyParser());
@@ -30,7 +27,7 @@ app.configure(function(){
 });
 
 // Import routes file
-require(config.getRoutesFile())(app);
+require(config.get('routes'))(app);
 
 // Development only
 if ('development' == app.get('env')) {

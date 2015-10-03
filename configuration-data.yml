@@ -1,0 +1,8 @@
+address: "localhost"
+port: 8080
+viewsDir: "/views"
+routes: "./routes/routes"
+langDir: "/locales"
+langSet: ["es","en"]
+dbAddress: "localhost"
+dbName: "sportmanager"
