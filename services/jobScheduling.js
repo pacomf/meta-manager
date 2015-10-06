@@ -3,7 +3,7 @@ var Agenda = require('agenda');
 var RssController = require('./rss/rss.js');
 var Config = require('../configuration.js');
 var dbMedia = require('../models/media.model');
-var async = require('async');
+var TwitterController = require('./social_networks/twitter.js');
 
 exports.scheduleRss = function (){
 
@@ -32,43 +32,38 @@ exports.scheduleRss = function (){
 			job.repeatEvery(Config.get('timeRss')+' minutes').save();
 		};
 		agenda.start();
-  		console.log("Jobs creados!");
+  		console.log("Jobs RSS run!");
 	});
 
 }
 
-exports.addSources = function (){
-	var aSources = [];
+exports.scheduleTwitter = function (){
+	dbMedia.find({type: 'Twitter'}, function (err, twitterSources){
+		var users = [];
+		for (var i = twitterSources.length - 1; i >= 0; i--) {
+			users.push(twitterSources[i].url);
+		};
 
-	aSources.push({name: 'marca', url: 'http://marca.feedsportal.com/rss/futbol_1adivision.xml', type: 'RSS'});
-	aSources.push({name: 'as', url: 'http://futbol.as.com/rss/futbol/primera.xml', type: 'RSS'});
-	async.eachSeries(aSources, function(source, callback){
-		dbMedia.findOne({url: source.url}, function (err, mSource){
-			if ((mSource === null) || (mSource === undefined)){
-				var newMedia = new dbMedia();
-				newMedia.name = source.name;
-				newMedia.url = source.url;
-				newMedia.type = source.type;
-				newMedia.save(
-					function(err, product, numberAffected){
-					 	callback();
+		if (users.length > 0){
+			var stream = TwitterController.T.stream('statuses/filter', { follow: users });
+
+			stream.on('tweet', function (tweet) {
+				var textTweet = tweet.text;
+				var dateTweet = new Date(tweet.created_at);
+				var urlTweet = 'https://twitter.com/'+tweet.user.screen_name+'/status/'+tweet.id_str;
+				var idUser = tweet.user.id_str;
+				dbMedia.findOne({url: idUser, type: 'Twitter'}, function (err, mMedia){
+					if ((mMedia === null) || (mMedia === undefined)){
+						console.log("Error in Find Media Twitter for idUser: "+idUser);
+					} else {
+						TwitterController.readAndProcessTwitter(mMedia._id, urlTweet, textTweet, dateTweet);
 					}
-				); 
-			} else {
-				mSource.name = source.name;
-				mSource.type = source.type;
-				mSource.save(
-					function(err, product, numberAffected){
-					 	callback();
-					}
-				); 
-			}
-		});
-	}, function (err){
-		if (!err)
-			console.log('Rss Added');
-		else
-			console.log("Error in Rss Addition");
+				});
+			});
+			console.log("Twitter Stream run!");
+  		} else {
+  			console.log("Error: Not exist Twitter Sources");
+  		}
 	});
-	
 }
+
