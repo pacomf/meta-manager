@@ -2,7 +2,16 @@ module.exports = function (app) {
 
   // Require index.js and index routes
   var index = require("./index");
+  var Agenda = require('agenda');
+  var AgendaUI = require('agenda-ui');
+  var Config = require('../configuration.js');
+
   app.get("/",index.home);
+
+  // Jobs
+  var agenda = new Agenda();
+  agenda.database('localhost:27017/'+Config.get('dbNameJobs'), Config.get('dbNameJobs'));
+  app.use('/agenda-ui', AgendaUI(agenda, {poll: 100000}));
 
   // Require Group Controller and define routes for it
   var groupPath = "/group";

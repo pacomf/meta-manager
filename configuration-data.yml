@@ -6,3 +6,5 @@ langDir: "/locales"
 langSet: ["es","en"]
 dbAddress: "localhost"
 dbName: "sportmanager"
+dbNameJobs: "sportmanager-jobs"
+timeRss: 10

@@ -11,7 +11,7 @@ var Player = new Schema({
   countryBirth: String,
   nationality: {
     primary: String,
-    secondary: String
+    secondary: String,
     community: Boolean
   },
   demarcation: String,
