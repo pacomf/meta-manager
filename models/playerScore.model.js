@@ -6,6 +6,8 @@ var Tree     = require('mongoose-tree');
 
 var PlayerScore = new Schema({
   player: { type : Schema.Types.ObjectId, ref : 'Player' },
+  season: Number, 
+  matchDay: Number,
   score: [{
     media: String,
     value: Number

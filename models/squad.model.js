@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var Schema   = mongoose.Schema;
 var Tree     = require('mongoose-tree');
 
-var Group = new Schema({
+var Squad = new Schema({
   team: { type : Schema.Types.ObjectId, ref : 'Team' },
   players: [
     { type : Schema.Types.ObjectId, ref : 'Player' }
@@ -12,5 +12,5 @@ var Group = new Schema({
   season: Number
 });
 
-Group.plugin(Tree);
-module.exports = mongoose.model('Group', Group);
+Squad.plugin(Tree);
+module.exports = mongoose.model('Squad', Squad);

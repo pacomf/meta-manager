@@ -14,7 +14,7 @@ exports.init = function(app){
 	// Crea 2 jugadores en modo Mock, solo para asignar KEYS para buscar despues en el RSS
 	//mocks.mockCreatePlayer();
 
-	//importData.addSources();
+	//importData.addCompetitions();
 	//jobScheduling.scheduleRss();
 	//jobScheduling.scheduleTwitter();
 

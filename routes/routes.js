@@ -13,15 +13,15 @@ module.exports = function (app) {
   agenda.database('localhost:27017/'+Config.get('dbNameJobs'), Config.get('dbNameJobs'));
   app.use('/agenda-ui', AgendaUI(agenda, {poll: 100000}));
 
-  // Require Group Controller and define routes for it
-  var groupPath = "/group";
-  var groupController = require('./group.controller');
-  app.get(groupPath,groupController.index);
-  app.get(groupPath + '/:id',groupController.show);
-  app.post(groupPath,groupController.create);
-  app.put(groupPath + '/:id',groupController.update);
-  app.patch(groupPath + '/:id',groupController.update);
-  app.delete(groupPath + '/:id',groupController.destroy);
+  // Require Squad Controller and define routes for it
+  var squadPath = "/squad";
+  var squadController = require('./squad.controller');
+  app.get(squadPath,squadController.index);
+  app.get(squadPath + '/:id',squadController.show);
+  app.post(squadPath,squadController.create);
+  app.put(squadPath + '/:id',squadController.update);
+  app.patch(squadPath + '/:id',squadController.update);
+  app.delete(squadPath + '/:id',squadController.destroy);
 
   // Require League Controller and define routes for it
   var leaguePath = "/league";

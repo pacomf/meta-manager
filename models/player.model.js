@@ -14,7 +14,7 @@ var Player = new Schema({
     secondary: String,
     community: Boolean
   },
-  demarcation: String,
+  role: String,
   keySearch: [String],
   socialNetworks: [{
     name: String,

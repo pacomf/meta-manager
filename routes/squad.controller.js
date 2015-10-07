@@ -1,56 +1,56 @@
 'use strict';
 
 var _ = require('lodash');
-var Group = require('../models/group.model');
+var Squad = require('../models/squad.model');
 
 exports.index = function(req, res){
-  Group
+  Squad
     .find({})
     .populate('team players')
-    .exec(function(err,groups){
+    .exec(function(err,squads){
       if(err) { return res.send(500, err); }
-      return res.json(200,groups);
+      return res.json(200,squads);
     });
 }
 
 exports.show = function(req, res){
-  Group
+  Squad
     .findById(req.params.id)
     .populate('team players')
-    .exec(function(err,group){
+    .exec(function(err,squad){
       if(err) { return res.send(500, err); }
-      return res.json(200,group);
+      return res.json(200,squad);
     });
 }
 
 exports.create = function(req, res){
-  Group
-    .create(req.body, function(err, group) {
+  Squad
+    .create(req.body, function(err, squad) {
       if(err) { return res.send(500, err); }
-      return res.json(201, group);
+      return res.json(201, squad);
     });
 }
 
 exports.update = function(req, res) {
   if(req.body._id) { delete req.body._id; }
-  Group
-    .findById(req.params.id, function (err, group) {
+  Squad
+    .findById(req.params.id, function (err, squad) {
       if (err) { return res.send(500, err); }
-      if(!group) { return res.send(404); }
-      var updated = _.merge(group, req.body);
+      if(!squad) { return res.send(404); }
+      var updated = _.merge(squad, req.body);
       updated.save(function (err) {
         if (err) { return res.send(500, err); }
-        return res.json(200, group);
+        return res.json(200, squad);
       });
     });
 };
 
 exports.destroy = function(req, res) {
-  Group
-    .findById(req.params.id, function (err, group) {
+  Squad
+    .findById(req.params.id, function (err, squad) {
       if(err) { return res.send(500, err); }
-      if(!group) { return res.send(404); }
-      group.remove(function(err) {
+      if(!squad) { return res.send(404); }
+      squad.remove(function(err) {
         if(err) { return res.send(500, err); }
         return res.send(204);
       });

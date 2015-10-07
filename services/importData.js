@@ -1,4 +1,5 @@
 var dbMedia = require('../models/media.model');
+var dbLeague = require('../models/league.model');
 var async = require('async');
 
 exports.addSources = function (){
@@ -37,4 +38,40 @@ exports.addSources = function (){
 			console.log("Error in Sources Addition");
 	});
 	
+}
+
+// IMPORT MANUAL. BE CAREFUL!
+
+exports.addCompetitions = function (){
+	var aCompetitions = [];
+
+	aCompetitions.push({name: 'Liga BBVA', country: 'Spain', division: '1'});
+
+	async.eachSeries(aCompetitions, function(competition, callback){
+		dbLeague.findOne({division: competition.division, country: competition.country}, function (err, mCompetition){
+			if ((mCompetition === null) || (mCompetition === undefined)){
+				var newLeague = new dbLeague();
+				newLeague.name = competition.name;
+				newLeague.country = competition.country;
+				newLeague.division = competition.division;
+				newLeague.save(
+					function(err, product, numberAffected){
+					 	callback();
+					}
+				); 
+			} else {
+				mCompetition.name = source.name;
+				mCompetition.save(
+					function(err, product, numberAffected){
+					 	callback();
+					}
+				); 
+			}
+		});
+	}, function (err){
+		if (!err)
+			console.log('Leagues Added');
+		else
+			console.log("Error in Leagues Addition");
+	});
 }
