@@ -14,8 +14,8 @@ exports.init = function(app){
 	// Crea 2 jugadores en modo Mock, solo para asignar KEYS para buscar despues en el RSS
 	//mocks.mockCreatePlayer();
 
-	//importData.addCompetitions();
+
+	//importData.addTeams("56150128c7d48fb01a5ffd34");
 	//jobScheduling.scheduleRss();
 	//jobScheduling.scheduleTwitter();
-
 }

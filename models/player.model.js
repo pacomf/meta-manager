@@ -20,7 +20,12 @@ var Player = new Schema({
     name: String,
     site: String
   }],
-  picture: String
+  picture: String,
+  season: [{
+    team: { type : Schema.Types.ObjectId, ref : 'Team' },
+    number: Number,
+    year: Number
+  }]
 });
 
 Player.plugin(Tree);
