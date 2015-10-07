@@ -2,10 +2,13 @@
 
 var importData = require('./importData.js');
 var jobScheduling = require('./jobScheduling.js');
+var utilities = require('./utilities.js');
 
 var mocks = require('./hacks.js');
 
 exports.mockMode = 0;
+
+
 
 exports.init = function(app){
 
@@ -16,6 +19,11 @@ exports.init = function(app){
 
 
 	//importData.addTeams("56150128c7d48fb01a5ffd34");
+
+	//importData.addPlayersBasicInfo("56150c8ad1af05200dd97ff9", 2016);
+	//utilities.scrappingPlayerDataFromWebMarca('http://www.marca.com/tag/k/3b/keylor_navas/estadisticas/primera/2015_16/');
+	//importData.addPlayers('./services/assets/playersBBVA.json', "56150128c7d48fb01a5ffd34", 2016, "MARCA");
 	//jobScheduling.scheduleRss();
 	//jobScheduling.scheduleTwitter();
+
 }

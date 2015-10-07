@@ -1,0 +1,3654 @@
+{
+  "ACB": [
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Iago Herrerín",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/iago_herrerin_89292/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Iraizoz",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/iraizoz_19878/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Balenziaga",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/balenziaga_27238/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Bóveda",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/boveda_31100/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "De Marcos",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/de_marcos_31909/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Etxeita",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/etxeita_26326/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Laporte",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/laporte_146941/"
+      }
+    },
+    {
+      "dorsal": "30",
+      "jugador": {
+        "text": "Lekue",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/lekue_197314/"
+      }
+    },
+    {
+      "dorsal": "32",
+      "jugador": {
+        "text": "Yeray",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/yeray_197319/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Aketxe",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/aketxe_159537/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Beñat",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/benat_25769/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Elustondo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/elustondo_24360/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Eraso",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/eraso_34085/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Gurpegi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/gurpegi_16969/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Ibai Gómez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ibai_gomez_34070/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Iturraspe",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/iturraspe_29843/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Mikel Rico",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mikel_rico_25414/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Raúl García",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/raul_garcia_22274/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "San José",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/san_jose_33579/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Susaeta",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/susaeta_26329/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Aduriz",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/aduriz_17939/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Iñaki Williams",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/inaki_williams_197334/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Kike Sola",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/kike_sola_26392/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Muniain",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/muniain_31917/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Sabin",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sabin_197332/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Viguera",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/viguera_26672/"
+      }
+    }
+  ],
+  "CAM": [
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Moyá",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/moya_16530/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Oblak",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/oblak_81352/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Filipe Luís",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/filipe_luis_23704/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Giménez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/gimenez_151883/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Godín",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/godin_27869/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Jesús Gámez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jesus_gamez_21855/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Juanfran",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/juanfran_19927/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Lucas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/lucas_174888/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Savic",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/savic_65807/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Siqueira",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/siqueira_25667/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Ferreira-Carrasco",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ferreira_carrasco_119718/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Gabi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/gabi_20585/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Koke",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/koke_31113/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Óliver Torres",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/oliver_torres_115860/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Saúl",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/saul_89335/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Thomas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/thomas_167199/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Tiago",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/tiago_12580/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Correa",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/correa_156223/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Fernando Torres",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fernando_torres_12185/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Griezmann",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/griezmann_33466/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Jackson Martínez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jackson_martinez_35834/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Vietto",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/vietto_108093/"
+      }
+    }
+  ],
+  "FCB": [
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Bravo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bravo_24890/"
+      }
+    },
+    {
+      "dorsal": "31",
+      "jugador": {
+        "text": "José Suárez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jose_suarez_191771/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Masip",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/masip_31082/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Ter Stegen",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ter_stegen_35446/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Adriano",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/adriano_22541/"
+      }
+    },
+    {
+      "dorsal": "-",
+      "jugador": {
+        "text": "Aleix Vidal",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/aleix_vidal_34817/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Bartra",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bartra_33517/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Dani Alves",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/dani_alves_18936/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Douglas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/douglas_61121/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Jordi Alba",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jordi_alba_29836/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Mascherano",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mascherano_16517/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Mathieu",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mathieu_17345/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Piqué",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pique_22416/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Vermaelen",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/vermaelen_20677/"
+      }
+    },
+    {
+      "dorsal": "-",
+      "jugador": {
+        "text": "Arda Turan",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/arda_turan_25651/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Busquets",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/busquets_30436/"
+      }
+    },
+    {
+      "dorsal": "27",
+      "jugador": {
+        "text": "Cámara",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/camara_116878/"
+      }
+    },
+    {
+      "dorsal": "28",
+      "jugador": {
+        "text": "Gumbau",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/gumbau_161030/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Iniesta",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/iniesta_16531/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Rafinha",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rafinha_92819/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Rakitic",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rakitic_28208/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Sergi Roberto",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sergi_roberto_34456/"
+      }
+    },
+    {
+      "dorsal": "26",
+      "jugador": {
+        "text": "Sergi Samper",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sergi_samper_106463/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Luis Suárez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/luis_suarez_25596/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Messi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/messi_22254/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Munir",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/munir_170864/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Neymar",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/neymar_61278/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Sandro Ramírez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sandro_ramirez_108438/"
+      }
+    }
+  ],
+  "RBB": [
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Adán",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/adan_25344/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Dani Giménez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/dani_gimenez_26741/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Bruno",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bruno_34868/"
+      }
+    },
+    {
+      "dorsal": "-",
+      "jugador": {
+        "text": "Jordi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jordi_31167/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Molinero",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/molinero_21393/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Pezzella",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pezzella_121220/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Piccini",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/piccini_92055/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Tarek",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/tarek_212993/"
+      }
+    },
+    {
+      "dorsal": "33",
+      "jugador": {
+        "text": "Varela",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/varela_161015/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Vargas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/vargas_22623/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Westermann",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/westermann_23092/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Álvaro Cejudo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/alvaro_cejudo_28817/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Dani Ceballos",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/dani_ceballos_182539/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Digard",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/digard_28184/"
+      }
+    },
+    {
+      "dorsal": "52",
+      "jugador": {
+        "text": "Fabián",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fabian_201379/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Joaquín",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/joaquin_4609/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Kadir",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/kadir_33162/"
+      }
+    },
+    {
+      "dorsal": "-",
+      "jugador": {
+        "text": "Matilla",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/matilla_29056/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "NDiaye",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ndiaye_30359/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Petros",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/petros_169576/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Portillo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/portillo_34855/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Vadillo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/vadillo_93338/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Van der Vaart",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/van_der_vaart_15483/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Xavi Torres",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/xavi_torres_25828/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Jorge Molina",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jorge_molina_26016/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Rennella",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rennella_71762/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Rubén Castro",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ruben_castro_7136/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Van Wolfswinkel",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/van_wolfswinkel_29884/"
+      }
+    }
+  ],
+  "RCCV": [
+    {
+      "dorsal": "26",
+      "jugador": {
+        "text": "Néstor",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/nestor_109700/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Rubén Blanco",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ruben_blanco_106539/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Sergio Álvarez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sergio_alvarez_25320/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Cabral",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/cabral_20521/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Fontás",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fontas_31081/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Hugo Mallo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/hugo_mallo_33824/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Jonny",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jonny_114128/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Planas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/planas_32132/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Sergi Gómez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sergi_gomez_34697/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Augusto Fernández",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/augusto_fernandez_24382/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Bongonda",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bongonda_153269/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Drazic",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/drazic_173874/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Madinda",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/madinda_96241/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Orellana",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/orellana_31802/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Pablo Hernández",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pablo_hernandez_55509/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Radoja",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/radoja_100263/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Señé",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sene_199319/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Wass",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/wass_36062/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Guidetti",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/guidetti_82970/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Iago Aspas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/iago_aspas_25912/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Nolito",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/nolito_26786/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Yelko Pino",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/yelko_pino_216393/"
+      }
+    }
+  ],
+  "RCDC": [
+    {
+      "dorsal": "26",
+      "jugador": {
+        "text": "David Gómez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/david_gomez_169099/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Fabricio",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fabricio_27258/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Lux",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/lux_12822/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Manu Fernández",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/manu_fernandez_23687/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Arribas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/arribas_32050/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Fernando Navarro",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fernando_navarro_4662/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Juanfran",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/juanfran_29352/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Laure",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/laure_25981/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Lopo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/lopo_2191/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Luisinho",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/luisinho_103844/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Manuel Pablo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/manuel_pablo_1855/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Saúl García",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/saul_garcia_174955/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Sidnei",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sidnei_30637/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Álex Bergantiños",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/alex_bergantinos_22736/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Borges",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/borges_32922/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Cani",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/cani_17099/"
+      }
+    },
+    {
+      "dorsal": "30",
+      "jugador": {
+        "text": "Cardoso",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/cardoso_200959/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Fajr",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fajr_92724/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Fede Cartabia",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fede_cartabia_167743/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Jonás Gutiérrez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jonas_gutierrez_15718/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Juan Domínguez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/juan_dominguez_27888/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Luis Alberto",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/luis_alberto_33787/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Medunjanin",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/medunjanin_22652/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Mosquera",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mosquera_27035/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Jonathan Rodríguez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jonathan_rodriguez_168177/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Lucas Pérez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/lucas_perez_155851/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Oriol Riera",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/oriol_riera_20536/"
+      }
+    }
+  ],
+  "SDE": [
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Jaime",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jaime_23725/"
+      }
+    },
+    {
+      "dorsal": "30",
+      "jugador": {
+        "text": "Jorge",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jorge_122808/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Riesgo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/riesgo_17776/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Xabi Irureta",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/xabi_irureta_31814/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "David Juncá",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/david_junca_105488/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Dos Santos",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/dos_santos_30099/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Ekiza",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ekiza_31101/"
+      }
+    },
+    {
+      "dorsal": "-",
+      "jugador": {
+        "text": "Gayoso",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/gayoso_198427/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Lillo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/lillo_27548/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Luna",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/luna_33776/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Pantic",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pantic_94532/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Ramis",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ramis_20670/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Adrián",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/adrian_25539/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Capa",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/capa_140266/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Dani García",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/dani_garcia_140264/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Eddy",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/eddy_97445/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Escalante",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/escalante_156305/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Hajrovic",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/hajrovic_69887/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Inui",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/inui_103263/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Keko",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/keko_31117/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Saúl Berjón",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/saul_berjon_28768/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Arruabarrena",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/arruabarrena_25428/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Borja Bastón",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/borja_baston_33622/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Sergi Enrich",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sergi_enrich_34122/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Verdi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/verdi_34655/"
+      }
+    }
+  ],
+  "RCDE": [
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Bardi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bardi_33479/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Pau López",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pau_lopez_182960/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Álvaro González",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/alvaro_gonzalez_34563/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Arbilla",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/arbilla_26317/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Ciani",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ciani_20225/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Enzo Roco",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/enzo_roco_122078/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Fuentes",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fuentes_34548/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Raíllo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/raillo_105571/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Rober",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rober_109262/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Rubén Duarte",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ruben_duarte_126119/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Víctor Álvarez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/victor_alvarez_92493/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Abraham",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/abraham_21829/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Burgui",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/burgui_163817/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Cañas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/canas_86989/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Hernán Pérez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/hernan_perez_34050/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Javi López",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/javi_lopez_28629/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Jordán",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jordan_195364/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Marco Asensio",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/marco_asensio_174292/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Paco Montañés",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/paco_montanes_24653/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Pape Diop",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pape_diop_24992/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Salva Sevilla",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/salva_sevilla_20371/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Víctor Sánchez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/victor_sanchez_29515/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Caicedo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/caicedo_27765/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Gerard Moreno",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/gerard_moreno_93721/"
+      }
+    },
+    {
+      "dorsal": "28",
+      "jugador": {
+        "text": "Sylla",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sylla_207721/"
+      }
+    }
+  ],
+  "GFC": [
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Guaita",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/guaita_26430/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Megyeri",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/megyeri_69013/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Alexis",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/alexis_19796/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Cala",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/cala_29657/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Damián Suárez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/damian_suarez_99005/"
+      }
+    },
+    {
+      "dorsal": "27",
+      "jugador": {
+        "text": "Noblejas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/noblejas_95487/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Roberto Lago",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/roberto_lago_25772/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Velázquez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/velazquez_151885/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Vergini",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/vergini_88372/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Vigaray",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/vigaray_167539/"
+      }
+    },
+    {
+      "dorsal": "32",
+      "jugador": {
+        "text": "Emi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/emi_195546/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Juan Rodríguez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/juan_rodriguez_19881/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Lacen",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/lacen_23775/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Lafita",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/lafita_23702/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Medrán",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/medran_165796/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Mensah",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mensah_184939/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Moi Gómez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/moi_gomez_109243/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Pedro León",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pedro_leon_22503/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Sarabia",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sarabia_88484/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Víctor Rodríguez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/victor_rodriguez_34331/"
+      }
+    },
+    {
+      "dorsal": "30",
+      "jugador": {
+        "text": "Wanderson",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/wanderson_126287/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Yoda",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/yoda_69888/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Álvaro",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/alvaro_34955/"
+      }
+    },
+    {
+      "dorsal": "26",
+      "jugador": {
+        "text": "Ian González",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ian_gonzalez_195459/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Scepovic",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/scepovic_35353/"
+      }
+    }
+  ],
+  "GCF": [
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Andrés Fernández",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/andres_fernandez_28789/"
+      }
+    },
+    {
+      "dorsal": "35",
+      "jugador": {
+        "text": "Dimitrievski",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/dimitrievski_94878/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Kelava",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/kelava_38457/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Babin",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/babin_30890/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Biraghi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/biraghi_88432/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Dória",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/doria_116736/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Foulquier",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/foulquier_96767/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Lombán",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/lomban_26431/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Mainz",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mainz_15939/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Miguel Lopes",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/miguel_lopes_30660/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Musavu-King",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/musavu_king_120773/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Neuton",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/neuton_101123/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Salva Ruíz",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/salva_ruiz_147263/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Edgar Méndez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/edgar_mendez_34328/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Fran Rico",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fran_rico_26182/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Javi Márquez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/javi_marquez_26038/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Krhin",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/krhin_33508/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Piti",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/piti_22728/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Robert Ibáñez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/robert_ibanez_168390/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Rubén Pérez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ruben_perez_31114/"
+      }
+    },
+    {
+      "dorsal": "26",
+      "jugador": {
+        "text": "Uche",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/uche_200961/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "El-Arabi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/el_arabi_31902/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Nico López",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/nico_lopez_110921/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Rochina",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rochina_31639/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Success",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/success_173514/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Thievy",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/thievy_95461/"
+      }
+    }
+  ],
+  "UDLP": [
+    {
+      "dorsal": "31",
+      "jugador": {
+        "text": "Dani Lorenzo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/dani_lorenzo_195597/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Javi Varas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/javi_varas_24150/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Raúl Lizoain",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/raul_lizoain_91022/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Alcaraz",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/alcaraz_18804/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Ángel",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/angel_5153/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Aythami Artiles",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/aythami_artiles_24087/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Bigas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bigas_91393/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Dani Castellano",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/dani_castellano_29564/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "David García",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/david_garcia_20216/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "David Simón",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/david_simon_194594/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Garrido",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/garrido_20164/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Culio",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/culio_21538/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "El Zhar",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/el_zhar_27150/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Hernán",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/hernan_93809/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Javi Castellano",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/javi_castellano_29605/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Jonathan Viera",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jonathan_viera_31790/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Momo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/momo_17853/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Nauzet Alemán",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/nauzet_aleman_20215/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Roque",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/roque_29570/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Valerón",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/valeron_1779/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Vicente",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/vicente_86403/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Wakaso",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/wakaso_31068/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Araujo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/araujo_34925/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Asdrúbal",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/asdrubal_169127/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Tana",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/tana_115157/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Willian José",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/willian_jose_35408/"
+      }
+    }
+  ],
+  "LUD": [
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Jesús",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jesus_31247/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Mariño",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/marino_35574/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Rubén",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ruben_21816/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "David Navarro",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/david_navarro_15622/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Feddal",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/feddal_34073/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Iván López",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ivan_lopez_105525/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Juanfran",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/juanfran_2169/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Nikos",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/nikos_29245/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Pedro López",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pedro_lopez_21833/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Toño",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/tono_34320/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Trujillo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/trujillo_28719/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Camarasa",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/camarasa_175946/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Jefferson Lerma",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jefferson_lerma_152551/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "José Mari",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jose_mari_33889/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Morales",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/morales_165375/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Rubén García",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ruben_garcia_130026/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Simao",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/simao_29366/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Verza",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/verza_19154/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Xumetra",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/xumetra_29086/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Casadesús",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/casadesus_22367/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Deyverson",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/deyverson_169148/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Ghilas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ghilas_108991/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Roger",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/roger_35601/"
+      }
+    }
+  ],
+  "MCF": [
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Kameni",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/kameni_5818/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Ochoa",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ochoa_24618/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Angeleri",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/angeleri_18533/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Boka",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/boka_17915/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Filipenko",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/filipenko_29345/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Flávio Ferreira",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/flavio_ferreira_78687/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Juan Carlos",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/juan_carlos_32279/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Miguel Torres",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/miguel_torres_25431/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Raúl Albentosa",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/raul_albentosa_30060/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Rosales",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rosales_28068/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Weligton",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/weligton_21727/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Camacho",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/camacho_28891/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Duda",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/duda_13724/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Fábio Espinho",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fabio_espinho_33216/"
+      }
+    },
+    {
+      "dorsal": "31",
+      "jugador": {
+        "text": "Fornals",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fornals_217593/"
+      }
+    },
+    {
+      "dorsal": "28",
+      "jugador": {
+        "text": "Juanpi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/juanpi_193450/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Recio",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/recio_91338/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Tissone",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/tissone_22785/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Amrabat",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/amrabat_28417/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Charles",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/charles_21786/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Cop",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/cop_30706/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Mastour",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mastour_185076/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Ricardo Horta",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ricardo_horta_155476/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Santa Cruz",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/santa_cruz_3143/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Tighadouini",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/tighadouini_96765/"
+      }
+    }
+  ],
+  "RVM": [
+    {
+      "dorsal": "31",
+      "jugador": {
+        "text": "Álex Campos",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/alex_campos_90279/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Cobeño",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/cobeno_16743/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Juan Carlos",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/juan_carlos_35607/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Toño",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/tono_20210/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Amaya",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/amaya_20209/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Chechu Dorado",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/chechu_dorado_21860/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Diego Llorente",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/diego_llorente_149915/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Nacho",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/nacho_33807/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Quini",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/quini_106671/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Rat",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rat_16827/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Tito",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/tito_25847/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Zé Castro",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ze_castro_20313/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Cissé",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/cisse_92644/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Ebert",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ebert_24922/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Embarba",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/embarba_132161/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Fariña",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/farina_34057/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Jozabed",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jozabed_105064/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Lass",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/lass_95786/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Pablo Hernández",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pablo_hernandez_24406/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Raúl Baena",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/raul_baena_29461/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Trashorras",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/trashorras_12147/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Zhang",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/zhang_80723/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Bebé",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bebe_84374/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Javi Guerra",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/javi_guerra_19771/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Manucho",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/manucho_31805/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Miku",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/miku_25770/"
+      }
+    }
+  ],
+  "RMCF": [
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Keylor Navas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/keylor_navas_1028411/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Kiko Casilla",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/kiko_casilla_23701/"
+      }
+    },
+    {
+      "dorsal": "31",
+      "jugador": {
+        "text": "Rubén Yáñez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ruben_yanez_110713/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Arbeloa",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/arbeloa_22197/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Carvajal",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/carvajal_88483/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Danilo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/danilo_100180/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Marcelo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/marcelo_27251/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Nacho",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/nacho_31885/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Pepe",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pepe_13962/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Sergio Ramos",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sergio_ramos_20629/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Varane",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/varane_90152/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Casemiro",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/casemiro_61256/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Cheryshev",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/cheryshev_88489/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Isco",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/isco_34065/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "James Rodríguez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/james_rodriguez_32090/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Kovacic",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/kovacic_91651/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Kroos",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/kroos_28130/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Lucas Vázquez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/lucas_vazquez_107593/"
+      }
+    },
+    {
+      "dorsal": "35",
+      "jugador": {
+        "text": "Marcos Llorente",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/marcos_llorente_192364/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Modric",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/modric_24490/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Bale",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bale_28741/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Benzema",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/benzema_22505/"
+      }
+    },
+    {
+      "dorsal": "27",
+      "jugador": {
+        "text": "Borja Mayoral",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/borja_mayoral_199248/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Cristiano Ronaldo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/cristiano_ronaldo_18436/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Jesé",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jese_93127/"
+      }
+    }
+  ],
+  "RSF": [
+    {
+      "dorsal": "31",
+      "jugador": {
+        "text": "Bardají",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bardaji_192367/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Oier",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/oier_29599/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Rulli",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rulli_106921/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Ansotegi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ansotegi_16886/"
+      }
+    },
+    {
+      "dorsal": "30",
+      "jugador": {
+        "text": "Aritz Elustondo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/aritz_elustondo_200957/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Carlos Martínez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/carlos_martinez_26657/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "De la Bella",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/de_la_bella_27288/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Diego Reyes",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/diego_reyes_100867/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Héctor",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/hector_145166/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Iñigo Martínez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/inigo_martinez_90318/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Mikel González",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mikel_gonzalez_22572/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Raúl Navas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/raul_navas_32349/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Yuri",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/yuri_34045/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Zaldua",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/zaldua_98821/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Bergara",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bergara_22806/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Bruma",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bruma_153680/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Canales",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/canales_31006/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Chory Castro",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/chory_castro_25225/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Granero",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/granero_24227/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Illarramendi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/illarramendi_29673/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Rubén Pardo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ruben_pardo_90328/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Xabi Prieto",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/xabi_prieto_20165/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Zurutuza",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/zurutuza_26666/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Agirretxe",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/agirretxe_22807/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Carlos Vela",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/carlos_vela_24385/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Jonathas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jonathas_34820/"
+      }
+    }
+  ],
+  "SFC": [
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Beto",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/beto_12195/"
+      }
+    },
+    {
+      "dorsal": "31",
+      "jugador": {
+        "text": "David Soria",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/david_soria_175204/"
+      }
+    },
+    {
+      "dorsal": "33",
+      "jugador": {
+        "text": "Juan Soriano",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/juan_soriano_178874/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Sergio Rico",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sergio_rico_94248/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Andreolli",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/andreolli_22851/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Carriço",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/carrico_30653/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Coke",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/coke_24013/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Escudero",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/escudero_31050/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Kolodziejczak",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/kolodziejczak_31782/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Mariano Ferreira",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mariano_ferreira_35298/"
+      }
+    },
+    {
+      "dorsal": "29",
+      "jugador": {
+        "text": "Matos",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/matos_213838/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Nico Pareja",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/nico_pareja_21620/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Rami",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rami_27663/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Trémoulinas",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/tremoulinas_24900/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Banega",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/banega_27572/"
+      }
+    },
+    {
+      "dorsal": "27",
+      "jugador": {
+        "text": "Cotán",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/cotan_105112/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Cristóforo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/cristoforo_151978/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Iborra",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/iborra_28687/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Kakuta",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/kakuta_34818/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Krohn-Dehli",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/krohn_dehli_21466/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Krychowiak",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/krychowiak_73494/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Luismi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/luismi_105093/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "N'Zonzi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/nzonzi_33396/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Reyes",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/reyes_2609/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Vitolo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/vitolo_31821/"
+      }
+    },
+    {
+      "dorsal": "28",
+      "jugador": {
+        "text": "Carlos Fernández",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/carlos_fernandez_176189/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Fernando Llorente",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fernando_llorente_22509/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Gameiro",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/gameiro_23065/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Immobile",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/immobile_32197/"
+      }
+    },
+    {
+      "dorsal": "30",
+      "jugador": {
+        "text": "Juan Muñoz",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/juan_munoz_195444/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Konoplyanka",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/konoplyanka_67773/"
+      }
+    }
+  ],
+  "RSG": [
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Alberto García",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/alberto_garcia_26051/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Cuéllar",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/cuellar_21392/"
+      }
+    },
+    {
+      "dorsal": "26",
+      "jugador": {
+        "text": "Denis",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/denis_98830/"
+      }
+    },
+    {
+      "dorsal": "30",
+      "jugador": {
+        "text": "Alberto",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/alberto_98843/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Alex Menéndez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/alex_menendez_90571/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Bernardo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bernardo_29581/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Canella",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/canella_25421/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Isma López",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/isma_lopez_28977/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Lora",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/lora_29397/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Luis Hernández",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/luis_hernandez_130025/"
+      }
+    },
+    {
+      "dorsal": "28",
+      "jugador": {
+        "text": "Meré",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mere_178866/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Álex Barrera",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/alex_barrera_35600/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Carmona",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/carmona_22354/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Guitián",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/guitian_109781/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Halilovic",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/halilovic_134316/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Jony",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jony_92190/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Juan Muñiz",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/juan_muniz_35112/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Mascarell",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mascarell_107594/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Nacho Cases",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/nacho_cases_31178/"
+      }
+    },
+    {
+      "dorsal": "33",
+      "jugador": {
+        "text": "Ndi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ndi_195974/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Pablo Pérez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pablo_perez_118094/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Rachid",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rachid_195442/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Sergio Álvarez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sergio_alvarez_34090/"
+      }
+    },
+    {
+      "dorsal": "32",
+      "jugador": {
+        "text": "Álvaro",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/alvaro_118092/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Carlos Castro",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/carlos_castro_118129/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Guerrero",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/guerrero_34000/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Hugo Fraile",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/hugo_fraile_29874/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Sanabria",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sanabria_168598/"
+      }
+    }
+  ],
+  "VCF": [
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Diego Alves",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/diego_alves_27743/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Jaume",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jaume_116732/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Matt Ryan",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/matt_ryan_131897/"
+      }
+    },
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Yoel",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/yoel_25896/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Abdennour",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/abdennour_35012/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Aderlan Santos",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/aderlan_santos_154075/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Barragán",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/barragan_23374/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Gayá",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/gaya_132105/"
+      }
+    },
+    {
+      "dorsal": "31",
+      "jugador": {
+        "text": "Ibrahim Diallo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ibrahim_diallo_215054/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "João Cancelo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/joao_cancelo_121145/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Mustafi",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mustafi_34941/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Orban",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/orban_32345/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Rúben Vezo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/ruben_vezo_116206/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "André Gomes",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/andre_gomes_120250/"
+      }
+    },
+    {
+      "dorsal": "12",
+      "jugador": {
+        "text": "Danilo Barbosa",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/danilo_barbosa_173085/"
+      }
+    },
+    {
+      "dorsal": "15",
+      "jugador": {
+        "text": "Enzo Pérez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/enzo_perez_25165/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Feghouli",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/feghouli_30162/"
+      }
+    },
+    {
+      "dorsal": "30",
+      "jugador": {
+        "text": "Fran Villalba",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/fran_villalba_179373/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Javi Fuego",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/javi_fuego_17073/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Parejo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/parejo_27312/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Rodrigo De Paul",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rodrigo_de_paul_119141/"
+      }
+    },
+    {
+      "dorsal": "16",
+      "jugador": {
+        "text": "Bakkali",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bakkali_155489/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Negredo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/negredo_23707/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Paco Alcácer",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/paco_alcacer_34765/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Piatti",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/piatti_27088/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Rodrigo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rodrigo_34867/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Santi Mina",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/santi_mina_150360/"
+      }
+    }
+  ],
+  "VICF": [
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Aréola",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/areola_84182/"
+      }
+    },
+    {
+      "dorsal": "25",
+      "jugador": {
+        "text": "Barbosa",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/barbosa_17416/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Sergio Asenjo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/sergio_asenjo_26725/"
+      }
+    },
+    {
+      "dorsal": "27",
+      "jugador": {
+        "text": "Adrián Marín",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/adrian_marin_178873/"
+      }
+    },
+    {
+      "dorsal": "24",
+      "jugador": {
+        "text": "Bailly",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bailly_197365/"
+      }
+    },
+    {
+      "dorsal": "23",
+      "jugador": {
+        "text": "Bonera",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bonera_5483/"
+      }
+    },
+    {
+      "dorsal": "11",
+      "jugador": {
+        "text": "Jaume Costa",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jaume_costa_29554/"
+      }
+    },
+    {
+      "dorsal": "3",
+      "jugador": {
+        "text": "Jokic",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jokic_28006/"
+      }
+    },
+    {
+      "dorsal": "2",
+      "jugador": {
+        "text": "Mario",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/mario_29452/"
+      }
+    },
+    {
+      "dorsal": "5",
+      "jugador": {
+        "text": "Musacchio",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/musacchio_27183/"
+      }
+    },
+    {
+      "dorsal": "44",
+      "jugador": {
+        "text": "Pablo Iñíguez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pablo_iniguez_108987/"
+      }
+    },
+    {
+      "dorsal": "22",
+      "jugador": {
+        "text": "Rukavina",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/rukavina_29608/"
+      }
+    },
+    {
+      "dorsal": "6",
+      "jugador": {
+        "text": "Víctor Ruiz",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/victor_ruiz_33654/"
+      }
+    },
+    {
+      "dorsal": "21",
+      "jugador": {
+        "text": "Bruno",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bruno_25284/"
+      }
+    },
+    {
+      "dorsal": "18",
+      "jugador": {
+        "text": "Denis Suárez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/denis_suarez_89572/"
+      }
+    },
+    {
+      "dorsal": "8",
+      "jugador": {
+        "text": "Jonathan dos Santos",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/jonathan_dos_santos_33876/"
+      }
+    },
+    {
+      "dorsal": "14",
+      "jugador": {
+        "text": "Manu Trigueros",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/manu_trigueros_32298/"
+      }
+    },
+    {
+      "dorsal": "26",
+      "jugador": {
+        "text": "Nahuel",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/nahuel_178063/"
+      }
+    },
+    {
+      "dorsal": "4",
+      "jugador": {
+        "text": "Pina",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/pina_33739/"
+      }
+    },
+    {
+      "dorsal": "20",
+      "jugador": {
+        "text": "Adrián",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/adrian_26628/"
+      }
+    },
+    {
+      "dorsal": "17",
+      "jugador": {
+        "text": "Bakambu",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/bakambu_83341/"
+      }
+    },
+    {
+      "dorsal": "10",
+      "jugador": {
+        "text": "Léo Baptistão",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/leo_baptistao_109269/"
+      }
+    },
+    {
+      "dorsal": "19",
+      "jugador": {
+        "text": "Samu Castillejo",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/samu_castillejo_193449/"
+      }
+    },
+    {
+      "dorsal": "7",
+      "jugador": {
+        "text": "Samuel",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/samuel_169008/"
+      }
+    },
+    {
+      "dorsal": "9",
+      "jugador": {
+        "text": "Soldado",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/soldado_21939/"
+      }
+    }
+  ]
+}
