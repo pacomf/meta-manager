@@ -114,6 +114,7 @@ exports.addTeams = function (idCompetition){
 						newTeam.name = team.name;
 						newTeam.shortName = team.shortName;
 						newTeam.fullName = team.fullName;
+						newTeam.league = mLeague;
 						newTeam.save(
 							function(err, product, numberAffected){
 							 	callback();
