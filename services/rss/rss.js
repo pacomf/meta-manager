@@ -49,7 +49,7 @@ exports.readAndProcessRss = function (idRss, urlRss, done){
           var date = new Date(item.date);
           var thresholdDate = new Date();
           var title = item.title;
-          thresholdDate.setDate(thresholdDate.getDate() - 5);
+          thresholdDate.setDate(thresholdDate.getDate() - 2);
           if (date > thresholdDate) {
             var dataFilter = title;
             if ((description !== undefined) && (description !== null)){

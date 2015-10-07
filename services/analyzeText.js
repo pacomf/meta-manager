@@ -10,17 +10,26 @@ exports.analyzeText = function(idMedia, dataFilter, link, title, date, type, don
     cleanText = dataFilter.replace(/<\/?[^>]+(>|$)/g, "");
 
   dbPlayer.find({}, function (err, players){
-      console
+
       async.eachSeries(players, function(player, callback){
          var keys = player.keySearch;
          var find = 0;
          for (var i = keys.length - 1; i >= 0; i--) {
-            var reSearch = new RegExp(keys[i], "i");
-            if (cleanText.search(reSearch) !== -1){
-              find = 1;
+            var subKeys = keys[i].split("&&"); // Para las claves complejas (key1&&key2).
+            for (var j = subKeys.length - 1; j >= 0; j--) {
+              var reSearch = new RegExp(subKeys[j], "i");
+              if (cleanText.search(reSearch) === -1){
+                break;
+              } else {
+                if (j === 0){
+                  find = 1;
+                }
+              }
+            }
+            if (find === 1){
               break;
             }
-         };
+         }
          if (find === 1){
             dbMedia.findById(idMedia, function (err, media){
                 if ((media === null) || (media === undefined)){
