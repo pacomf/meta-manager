@@ -4,8 +4,9 @@ var dbTeam = require('../models/team.model');
 var dbPlayer = require('../models/player.model');
 var async = require('async');
 var jsonfile = require('jsonfile');
+var util = require('util');
 
-var utilities = require('./utilities.js');
+var scrapping = require('./scrapping/scrapping.js');
 
 exports.addSources = function (){
 	var aSources = [];
@@ -143,75 +144,6 @@ exports.addTeams = function (idCompetition){
 	});
 }
 
-exports.addPlayersBasicInfo = function (idTeam, year){
-	var aPlayers = [];
-
-	aPlayers.push({name: 'Paco', birthdate: '1987-02-18', nationality: 'Spain', role: 'MED', number: '3'});
-	aPlayers.push({name: 'Sara', birthdate: '1984-11-23', nationality: 'Brazil', role: 'POR', number: '7'});
-
-	async.eachSeries(aPlayers, function(player, callback){
-		dbTeam.findById(idTeam, function (err, mTeam){
-			if ((mTeam === null) || (mTeam === undefined)){
-				console.log("Team not Find to Insert Player");
-				callback();
-			} else {
-				// TODO: ¿Buscar tambien por equipo actual?
-				var mBirthday = new Date(player.birthdate);
-				dbPlayer.findOne({name: player.name, birthdate: mBirthday}, function (err, mPlayer){
-					if ((mPlayer === null) || (mPlayer === undefined)){
-						var newPlayer = new dbPlayer();
-						newPlayer.name = player.name;
-						newPlayer.birthdate = mBirthday;
-						newPlayer.nationality.primary = player.nationality;
-						newPlayer.role = player.role;
-						var season = {};
-						season.team = mTeam;
-						season.number = player.number;
-						season.year = year;
-						newPlayer.season.push(season);
-						newPlayer.save(
-							function(err, product, numberAffected){
-							 	callback();
-							}
-						); 
-					} else {
-						mPlayer.nationality.primary = player.nationality;
-						mPlayer.role = player.role;
-						var find = 0;
-						for (var i = mPlayer.season.length - 1; i >= 0; i--) {
-							if (mPlayer.season[i].year === year){
-								mPlayer.season[i].team = mTeam;
-								mPlayer.season[i].number = player.number;
-								find = 1;
-								break;
-							}
-						}
-						if (find === 0){
-							var season = {};
-							season.team = mTeam;
-							season.number = player.number;
-							season.year = year;
-							mPlayer.season.push(season);
-						}
-						mPlayer.save(
-							function(err, product, numberAffected){
-							 	callback();
-							}
-						); 
-					}
-				});
-			}
-		});
-	}, function (err){
-		if (!err)
-			console.log('Players Added');
-		else
-			console.log("Error in Players Addition");
-	});
-}
-
-var util = require('util');
-
 exports.addPlayers = function (fileJSON, idLeague, year, web){
 	jsonfile.readFile(fileJSON, { encoding: 'utf8' }, function(err, obj) {
 		dbLeague.findById(idLeague, function (err, mLeague){
@@ -224,12 +156,10 @@ exports.addPlayers = function (fileJSON, idLeague, year, web){
 						console.log("ERROR: Not Exist Teams for League: "+idLeague);
 						return;
 					} else {
-						var i=0;
 						async.eachSeries(teams, function(team, callbackTeam){
 							async.eachSeries(obj[team.shortName], function(iPlayer, callbackPlayer){
 								dbPlayer.findOne({season: { $elemMatch: { team: team, number: iPlayer.dorsal, year: year}}}, function (err, player){
 									if ((player === null) || (player === undefined)){
-										console.log("Nuevo");
 										player = new dbPlayer();
 										var season = {};
 										season.team = team;
@@ -238,12 +168,8 @@ exports.addPlayers = function (fileJSON, idLeague, year, web){
 										player.season.push(season);
 									}
 									player.name = iPlayer.jugador.text;
-									utilities.scrappingPlayerDataFromWeb(player, iPlayer.jugador.href, web);
-									i++;
-									if (i<3)
-										callbackPlayer();
-									else
-										return;
+									scrapping.scrappingPlayerDataFromWeb(player, iPlayer.jugador.href, web);
+									callbackPlayer();
 								});
 							}, function (err){
 								if (!err)

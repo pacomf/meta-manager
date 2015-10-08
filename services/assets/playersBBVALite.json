@@ -1,0 +1,27 @@
+{
+  "ACB": [
+    {
+      "dorsal": "13",
+      "jugador": {
+        "text": "Iago Herrerín",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/iago_herrerin_89292/"
+      }
+    },
+    {
+      "dorsal": "1",
+      "jugador": {
+        "text": "Iraizoz",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/iraizoz_19878/"
+      }
+    }
+  ],
+  "RCDC": [
+    {
+      "dorsal": "26",
+      "jugador": {
+        "text": "David Gómez",
+        "href": "http://www.marca.com/estadisticas/futbol/primera/2015_16/david_gomez_169099/"
+      }
+    }
+  ]
+}
