@@ -2,7 +2,7 @@ var request = require("request");
 var cheerio = require("cheerio");
 var iconv = require('iconv-lite');
 
-exports.scrappingPlayerDataFromWebMarca = function (player, url){
+exports.scrappingPlayerDataFromWebMarca = function (player, url, callback){
 	var requestOptions  = {encoding: null, method: "GET", uri: url};
 	request(requestOptions, function (error, response, body) {
 		if (!error) {
@@ -16,12 +16,12 @@ exports.scrappingPlayerDataFromWebMarca = function (player, url){
 			player.fullName = parentNode.find($('dl dd').get(0)).text();
 			player.birthday = dateWebMarcaFormatToDateStr(parentNode.find($('dl dd').get(1)).text());
 			player.role = parentNode.find($('dl dd').get(6)).text();
-
 			player.save();
 
 		} else {
 			console.log("Error: "+error+", Scrapping Web: " + url);
 		}
+		callback();
 	});
 }
 

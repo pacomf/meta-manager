@@ -48,66 +48,35 @@ exports.addSources = function (){
 
 // IMPORT MANUAL. BE CAREFUL!
 
-exports.addCompetitions = function (){
-	var aCompetitions = [];
-
-	aCompetitions.push({name: 'Liga BBVA', country: 'Spain', division: '1'});
-
-	async.eachSeries(aCompetitions, function(competition, callback){
-		dbLeague.findOne({division: competition.division, country: competition.country}, function (err, mCompetition){
-			if ((mCompetition === null) || (mCompetition === undefined)){
-				var newLeague = new dbLeague();
-				newLeague.name = competition.name;
-				newLeague.country = competition.country;
-				newLeague.division = competition.division;
-				newLeague.save(
-					function(err, product, numberAffected){
-					 	callback();
-					}
-				); 
-			} else {
-				mCompetition.name = competition.name;
-				mCompetition.save(
-					function(err, product, numberAffected){
-					 	callback();
-					}
-				); 
-			}
-		});
-	}, function (err){
-		if (!err)
-			console.log('Leagues Added');
-		else
-			console.log("Error in Leagues Addition");
+exports.addLeague = function (name, country, division, aTeams, jsonPlayers, year, web){
+	dbLeague.findOne({division: division, country: country}, function (err, mLeague){
+		if ((mLeague === null) || (mLeague === undefined)){
+			var newLeague = new dbLeague();
+			newLeague.name = name;
+			newLeague.country = country;
+			newLeague.division = division;
+			newLeague.save(
+				function(err, league, numberAffected){
+					console.log('New League Added');
+					addTeams(league._id, aTeams, jsonPlayers, year, web);
+				}
+			); 
+		} else {
+			mLeague.name = name;
+			mLeague.save(
+				function(err, league, numberAffected){
+				 	console.log('Modify League Done');
+					addTeams(league._id, aTeams, jsonPlayers, year, web);
+				}
+			); 
+		}
 	});
 }
 
-exports.addTeams = function (idCompetition){
-	var aTeams = [];
-
-	aTeams.push({name: 'Deportivo', fullName: 'RC Deportivo La Coruña', shortName: 'RCDC'});
-	aTeams.push({name: 'Real Sociedad', fullName: 'Real Sociedad de Fútbol', shortName: 'RSF'});
-	aTeams.push({name: 'Espanyol', fullName: 'RCD Espanyol', shortName: 'RCDE'});
-	aTeams.push({name: 'Getafe', fullName: 'Getafe CF', shortName: 'GFC'});
-	aTeams.push({name: 'Atlético', fullName: 'Club Atlético de Madrid', shortName: 'CAM'});
-	aTeams.push({name: 'Las Palmas', fullName: 'UD Las Palmas', shortName: 'UDLP'});
-	aTeams.push({name: 'Rayo', fullName: 'Rayo Vallecano de Madrid', shortName: 'RVM'});
-	aTeams.push({name: 'Valencia', fullName: 'Valencia CF', shortName: 'VCF'});
-	aTeams.push({name: 'Málaga', fullName: 'Málaga CF', shortName: 'MCF'});
-	aTeams.push({name: 'Sevilla', fullName: 'Sevilla FC', shortName: 'SFC'});
-	aTeams.push({name: 'Bilbao', fullName: 'Athletic Club de Bilbao', shortName: 'ACB'});
-	aTeams.push({name: 'Barcelona', fullName: 'FC Barcelona', shortName: 'FCB'});
-	aTeams.push({name: 'Sporting', fullName: 'Real Sporting Gijón', shortName: 'RSG'});
-	aTeams.push({name: 'Real Madrid', fullName: 'Real Madrid CF', shortName: 'RMCF'});
-	aTeams.push({name: 'Levante', fullName: 'Levante UD', shortName: 'LUD'});
-	aTeams.push({name: 'Celta', fullName: 'RC Celta de Vigo', shortName: 'RCCV'});
-	aTeams.push({name: 'Betis', fullName: 'Real Betis Balompié', shortName: 'RBB'});
-	aTeams.push({name: 'Villareal', fullName: 'Villarreal CF', shortName: 'VICF'});
-	aTeams.push({name: 'Granada', fullName: 'Granada CF', shortName: 'GCF'});
-	aTeams.push({name: 'Eibar', fullName: 'SD Eibar', shortName: 'SDE'});
+function addTeams (idLeague, aTeams, jsonPlayers, year, web){
 
 	async.eachSeries(aTeams, function(team, callback){
-		dbLeague.findById(idCompetition, function (err, mLeague){
+		dbLeague.findById(idLeague, function (err, mLeague){
 			if ((mLeague === null) || (mLeague === undefined)){
 				console.log("League not Find to Insert Team");
 				callback();
@@ -137,14 +106,15 @@ exports.addTeams = function (idCompetition){
 			}
 		});
 	}, function (err){
-		if (!err)
+		if (!err){
 			console.log('Teams Added');
-		else
+			addPlayers(jsonPlayers, idLeague, year, web);
+		} else
 			console.log("Error in Teams Addition");
 	});
 }
 
-exports.addPlayers = function (fileJSON, idLeague, year, web){
+function addPlayers (fileJSON, idLeague, year, web){
 	jsonfile.readFile(fileJSON, { encoding: 'utf8' }, function(err, obj) {
 		dbLeague.findById(idLeague, function (err, mLeague){
 			if ((mLeague === null) || (mLeague === undefined)){
@@ -168,8 +138,7 @@ exports.addPlayers = function (fileJSON, idLeague, year, web){
 										player.season.push(season);
 									}
 									player.name = iPlayer.jugador.text;
-									scrapping.scrappingPlayerDataFromWeb(player, iPlayer.jugador.href, web);
-									callbackPlayer();
+									scrapping.scrappingPlayerDataFromWeb(player, iPlayer.jugador.href, web, callbackPlayer);
 								});
 							}, function (err){
 								if (!err)
@@ -179,7 +148,7 @@ exports.addPlayers = function (fileJSON, idLeague, year, web){
 							});
 						}, function (err){
 							if (!err)
-								console.log('Players Added');
+								console.log('Players Added. All data import!');
 							else
 								console.log("Error 2 in Players Addition");
 						});
