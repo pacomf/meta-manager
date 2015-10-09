@@ -36,7 +36,8 @@ exports.analyzeText = function(idMedia, dataFilter, link, title, date, type, don
                   console.log("Error in "+type+" Analyze, Media Exist: "+idMedia);
                   callback();
                 } else {
-                  dbNews.findOne({url: link}, function (err, mNews){
+                  // TODO: Se comprueba aqui si ya existe... pero antes NO, e igual en los RT seria aconsejable hacerlo mucho antes para evitar todos los procesos anteriores a llegar aqui
+                  dbNews.findOne({url: link, player: player}, function (err, mNews){
                     if ((mNews === null) || (mNews === undefined)){
                       var newNews = dbNews();
                       newNews.player = player;

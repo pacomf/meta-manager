@@ -1,0 +1,214 @@
+[
+    {
+        "nombre": "Marca",
+        "rss": "http://marca.feedsportal.com/rss/futbol_1adivision.xml"
+    },
+    {
+        "nombre": "As",
+        "rss": "http://futbol.as.com/rss/futbol/primera.xml"
+    },
+    {
+        "nombre": "Mundo Deportivo",
+        "rss": "http://www.mundodeportivo.com/feed/rss/futbol/la-liga-bbva"
+    },
+    {
+        "nombre": "esFutbol",
+        "rss": "http://feeds.esfutbol.net/rss/?c=65"
+    },
+    {
+        "nombre": "Sport",
+        "rss": "http://www.sport.es/es/rss/liga-bbva/rss.xml"
+    },
+    {
+        "nombre": "Superdeporte",
+        "rss": "http://www.superdeporte.es/elementosInt/rss/3"
+    },
+    {
+        "nombre": "Goal",
+        "rss": "http://www.goal.com/es/feeds/news?fmt=rss&ICID=HP"
+    },
+    {
+        "nombre": "Diario Gol",
+        "rss": "http://www.diariogol.com/es/rss/rss-de-futbol-025.xml"
+    },
+    {
+        "nombre": "Sportyou",
+        "rss": "http://www.sportyou.es/blog/feed"
+    },
+    {
+        "nombre": "Estadio Deportivo",
+        "rss": "http://www.estadiodeportivo.com/elementosInt/rss/5"
+    },
+    {
+        "nombre": "ESPN Futbol",
+        "rss": "http://espndeportes-assets.espn.go.com/rss/news?section=section.FutbolEspana&name=futbol/espana"
+    },
+    {
+        "nombre": "MercaFutbol",
+        "rss": "http://www.mercafutbol.com/feed/"
+    },
+    {
+        "nombre": "RTVE Deportes",
+        "rss": "http://www.rtve.es/rss/temas_deportes.xml"
+    },
+    {
+        "nombre": "Antena3 Deportes",
+        "rss": "http://feeds.feedburner.com/Noticias-deportes-antena3?format=xml"
+    },
+    {
+        "nombre": "Deportes ABC",
+        "rss": "http://www.abc.es/rss/feeds/abc_Futbol.xml"
+    },
+    {
+        "nombre": "El Pais Deportes",
+        "rss": "http://elpais.com/tag/rss/futbol/a/"
+    },
+    {
+        "nombre": "El Mundo Futbol",
+        "rss": "http://estaticos.elmundo.es/elmundodeporte/rss/futbol.xml"
+    },
+    {
+        "nombre": "El Confidencial Futbol",
+        "rss": "http://rss.elconfidencial.com/deportes/futbol/"
+    },
+    {
+        "nombre": "La Vanguardia Futbol",
+        "rss": "http://www.lavanguardia.com/feed/deportes/futbol/index.html"
+    },
+    {
+        "nombre": "La Información ",
+        "rss": "http://rss.noticias.lainformacion.com/deporte/futbol/"
+    },
+    {
+        "nombre": "Lider en Deportes",
+        "rss": "http://www.liderendeportes.com/cmspages/rss/lider/futbol.aspx"
+    },
+    {
+        "nombre": "Voz de Galicia",
+        "rss": "http://www.lavozdegalicia.es/deportes/index.xml"
+    },
+    {
+        "nombre": "elCorreo",
+        "rss": "http://www.elcorreo.com/bizkaia/rss/atom?seccion=deportes%2Ffutbol"
+    },
+    {
+        "nombre": "Deia ",
+        "rss": "http://www.deia.com/rss/deportes.xml"
+    },
+    {
+        "nombre": "Vavel Getafe",
+        "rss": "http://www.vavel.com/feed/es/futbol/getafe-cf/index.rss"
+    },
+    {
+        "nombre": "FutbolPrimera.es",
+        "rss": "http://feeds.feedburner.com/futbolprimeraes?format=xml"
+    },
+    {
+        "nombre": "Fichajes.net",
+        "rss": "http://feeds.feedburner.com/fichajesrumores?format=xml"
+    },
+    {
+        "nombre": "Defensa Central",
+        "rss": "http://www.defensacentral.com/rss/rss.php?sec=1"
+    },
+    {
+        "nombre": "90 min",
+        "rss": "http://www.90min.com/es/leagues/la-liga.rss"
+    },
+    {
+        "nombre": "TodoMercado",
+        "rss": "http://feeds.todomercadoweb.es/rss/?c=1"
+    },
+    {
+        "nombre": "Malaga CF",
+        "rss": "http://www.malagacf.com/rss"
+    },
+    {
+        "nombre": "Insta Futbol",
+        "rss": "http://instafutbol.com/feed"
+    },
+    {
+        "nombre": "BetisWeb",
+        "rss": "http://www.betisweb.com/external.php?type=RSS2"
+    },
+    {
+        "nombre": "FC Barcelona Noticias",
+        "rss": "http://feeds.feedburner.com/barcelonanoticias?format=xml"
+    },
+    {
+        "nombre": "En Un Momento Dado",
+        "rss": "http://feeds.feedburner.com/EUMD?format=xml"
+    },
+    {
+        "nombre": "Diarios de Futbol",
+        "rss": "http://feeds.feedburner.com/diariosdefutbol"
+    },
+    {
+        "nombre": "LigaFutbol",
+        "rss": "http://www.ligafutbol.net/feed/"
+    },
+    {
+        "nombre": "alPoste",
+        "rss": "http://alposte.com/feed/"
+    },
+    {
+        "nombre": "Villareal",
+        "rss": "http://www.villarrealcf.es/noticias/indice-general?format=feed"
+    },
+    {
+        "nombre": "CiberChe",
+        "rss": "http://www.ciberche.net/index.php?option=com_rd_rss&id=2"
+    },
+    {
+        "nombre": "Diario La Grada",
+        "rss": "http://zetaestaticos.com/diariolagrada/rss/2_es.xml"
+    },
+    {
+        "nombre": "elFutbolin",
+        "rss": "http://www.elfutbolin.com/rss/"
+    },
+    {
+        "nombre": "Riazor",
+        "rss": "http://www.riazor.org/feed/"
+    },
+    {
+        "nombre": "Orgullo de Nervión",
+        "rss": "http://sevilla.abc.es/deportes/orgullodenervion/feed/"
+    },
+    {
+        "nombre": "Eitb Futbol",
+        "rss": "http://www.eitb.eus/es/rss/deportes/futbol/"
+    },
+    {
+        "nombre": "La Provincia",
+        "rss": "http://www.laprovincia.es/elementosInt/rss/81"
+    },
+    {
+        "nombre": "Canarias 7",
+        "rss": "http://www.canarias7.es/rsstitulares.cfm?tag=60"
+    },
+    {
+        "nombre": "El Periodico ",
+        "rss": "http://www.elperiodico.cat/ca/rss/esports/rss.xml"
+    },
+    {
+        "nombre": "Levante-EMV",
+        "rss": "http://www.levante-emv.com/elementosInt/rss/105"
+    },
+    {
+        "nombre": "SumaDiario",
+        "rss": "http://rss.noticias.sumadiario.com/deporte/"
+    },
+    {
+        "nombre": "Granada en Juego",
+        "rss": "http://www.granadaenjuego.com/rss/actuales.php"
+    },
+    {
+        "nombre": "Futbol Gurus",
+        "rss": "http://www.futbolgurus.com/feed/"
+    },
+    {
+        "nombre": "TransferMarkt",
+        "rss": "http://www.transfermarkt.es/rss/news"
+    }
+]

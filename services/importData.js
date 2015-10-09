@@ -2,18 +2,18 @@ var dbMedia = require('../models/media.model');
 var dbLeague = require('../models/league.model');
 var dbTeam = require('../models/team.model');
 var dbPlayer = require('../models/player.model');
+
 var async = require('async');
 var jsonfile = require('jsonfile');
 var util = require('util');
 
+var jobScheduling = require('./jobScheduling.js');
+
+var importData = require('./importData.js');
+
 var scrapping = require('./scrapping/scrapping.js');
 
-exports.addSources = function (){
-	var aSources = [];
-
-	aSources.push({name: 'marca', url: 'http://marca.feedsportal.com/rss/futbol_1adivision.xml', type: 'RSS'});
-	aSources.push({name: 'as', url: 'http://futbol.as.com/rss/futbol/primera.xml', type: 'RSS'});
-	aSources.push({name: 'Pakote', url: '526390388', type: 'Twitter'});
+exports.addSources = function (aSources){
 
 	async.eachSeries(aSources, function(source, callback){
 		dbMedia.findOne({url: source.url}, function (err, mSource){
@@ -38,15 +38,16 @@ exports.addSources = function (){
 			}
 		});
 	}, function (err){
-		if (!err)
-			console.log('Sources Added');
+		if (!err){
+			console.log('Sources Added. All data import!');
+			//jobScheduling.scheduleRss();
+			jobScheduling.scheduleTwitter();
+		}
 		else
 			console.log("Error in Sources Addition");
 	});
 	
 }
-
-// IMPORT MANUAL. BE CAREFUL!
 
 exports.addLeague = function (name, country, division, aTeams, jsonPlayers, year, web){
 	dbLeague.findOne({division: division, country: country}, function (err, mLeague){
@@ -147,9 +148,10 @@ function addPlayers (fileJSON, idLeague, year, web){
 									console.log("Error 1 in Players Addition");
 							});
 						}, function (err){
-							if (!err)
-								console.log('Players Added. All data import!');
-							else
+							if (!err){
+								console.log('Players Added');
+								importData.initSources();
+							} else
 								console.log("Error 2 in Players Addition");
 						});
 					}
@@ -158,5 +160,28 @@ function addPlayers (fileJSON, idLeague, year, web){
 			}
 		});
   		
+	});
+}
+
+exports.initSources = function(){
+	var fileRss = './services/assets/rss.json';
+	var fileTwitter = './services/assets/twitter.json';
+
+	jsonfile.readFile(fileRss, { encoding: 'utf8' }, function(err, objRss) {
+		var aSources = [];
+
+		for (var i = objRss.length - 1; i >= 0; i--) {
+			aSources.push({name: objRss[i].nombre, url: objRss[i].rss, type: 'RSS'});
+		};
+
+		jsonfile.readFile(fileTwitter, { encoding: 'utf8' }, function(err, objTwitter) {
+
+			for (var i = objTwitter.length - 1; i >= 0; i--) {
+				aSources.push({name: objTwitter[i].twitter, url: objTwitter[i].id, type: 'Twitter'});
+			};
+
+			importData.addSources(aSources);
+			
+		});
 	});
 }

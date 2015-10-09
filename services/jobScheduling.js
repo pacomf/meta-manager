@@ -52,9 +52,14 @@ exports.scheduleTwitter = function (){
 				var dateTweet = new Date(tweet.created_at);
 				var urlTweet = 'https://twitter.com/'+tweet.user.screen_name+'/status/'+tweet.id_str;
 				var idUser = tweet.user.id_str;
+				// Se busca solo por Tweets generados por los Users (Follow)
+				// Si es un RT de alguien sobre ese User, no lo procesara porque no encontrara en BBDD al usuario,
+				// ya que en los RT, el usuario que hace el RT es el que llega, no el que escribio el Tweet.
 				dbMedia.findOne({url: idUser, type: 'Twitter'}, function (err, mMedia){
 					if ((mMedia === null) || (mMedia === undefined)){
-						console.log("Error in Find Media Twitter for idUser: "+idUser);
+						// Entrara por aquí siempre que llegue un RT de alguien sobre un Follow del Sistema
+						//console.log("Error in Find Media Twitter for idUser: "+idUser);
+						return;
 					} else {
 						TwitterController.readAndProcessTwitter(mMedia._id, urlTweet, textTweet, dateTweet);
 					}

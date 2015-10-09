@@ -1,0 +1,294 @@
+[
+    {
+        "twitter": "LaLiga",
+        "id": "423384542"
+    },
+    {
+        "twitter": "Atleti",
+        "id": "199354750"
+    },
+    {
+        "twitter": "AtheticClub",
+        "id": "2358489769"
+    },
+    {
+        "twitter": "FCBarcelona_es",
+        "id": "112764971"
+    },
+    {
+        "twitter": "GranadaCdeF",
+        "id": "188263011"
+    },
+    {
+        "twitter": "LevanteUD",
+        "id": "34743419"
+    },
+    {
+        "twitter": "MalagaCF",
+        "id": "48961075"
+    },
+    {
+        "twitter": "RVMOficial",
+        "id": "498012129"
+    },
+    {
+        "twitter": "RCDEspanyol",
+        "id": "114516774"
+    },
+    {
+        "twitter": "Realmadrid",
+        "id": "14872237"
+    },
+    {
+        "twitter": "Realsociedad",
+        "id": "390545466"
+    },
+    {
+        "twitter": "SevillaFC",
+        "id": "115123104"
+    },
+    {
+        "twitter": "Valenciacf",
+        "id": "109312021"
+    },
+    {
+        "twitter": "Sdeibar",
+        "id": "442869924"
+    },
+    {
+        "twitter": "UDLP_oficial",
+        "id": "156998330"
+    },
+    {
+        "twitter": "Realsporting",
+        "id": "342171958"
+    },
+    {
+        "twitter": "Rccelta_oficial",
+        "id": "267975373"
+    },
+    {
+        "twitter": "RCDeportivo",
+        "id": "150581068"
+    },
+    {
+        "twitter": "RealBetis",
+        "id": "296756458"
+    },
+    {
+        "twitter": "GetafeCF",
+        "id": "3511605017"
+    },
+    {
+        "twitter": "VillarrealCF",
+        "id": "46862437"
+    },
+    {
+        "twitter": "eldesmarque",
+        "id": "98677620"
+    },
+    {
+        "twitter": "YoSeDelEspanyol",
+        "id": "1641998972"
+    },
+    {
+        "twitter": "tjcope",
+        "id": "182330628"
+    },
+    {
+        "twitter": "juanmacastano",
+        "id": "74154806"
+    },
+    {
+        "twitter": "manucarreno",
+        "id": "97094445"
+    },
+    {
+        "twitter": "maldiniplus",
+        "id": "72811133"
+    },
+    {
+        "twitter": "AxelTorres",
+        "id": "100581725"
+    },
+    {
+        "twitter": "marcoslopez",
+        "id": "94072526"
+    },
+    {
+        "twitter": "EstevaSexta",
+        "id": "170770883"
+    },
+    {
+        "twitter": "gabyruizplus",
+        "id": "105832596"
+    },
+    {
+        "twitter": "carlosplus",
+        "id": "114728026"
+    },
+    {
+        "twitter": "michaelrobinson",
+        "id": "27034001"
+    },
+    {
+        "twitter": "partidodelas12",
+        "id": "182501483"
+    },
+    {
+        "twitter": "ellarguero",
+        "id": "93601274"
+    },
+    {
+        "twitter": "jrdelamorena",
+        "id": "210551474"
+    },
+    {
+        "twitter": "elchiringuitotv",
+        "id": "18905975"
+    },
+    {
+        "twitter": "jpedrerol",
+        "id": "200283629"
+    },
+    {
+        "twitter": "sirolopez",
+        "id": "107349488"
+    },
+    {
+        "twitter": "As_TomasRoncero",
+        "id": "301921037"
+    },
+    {
+        "twitter": "carrusel",
+        "id": "180731328"
+    },
+    {
+        "twitter": "MEltertuliano",
+        "id": "3586263855"
+    },
+    {
+        "twitter": "lamacope",
+        "id": "1222060448"
+    },
+    {
+        "twitter": "Guaschcope",
+        "id": "2541845341"
+    },
+    {
+        "twitter": "ferevangelio",
+        "id": "55952538"
+    },
+    {
+        "twitter": "pedritonumeros",
+        "id": "197852287"
+    },
+    {
+        "twitter": "yosisedefutbol",
+        "id": "1352865301"
+    },
+    {
+        "twitter": "YoSeDeLaLiga",
+        "id": "1876672182"
+    },
+    {
+        "twitter": "YoSeDelAtleti",
+        "id": "1594430552"
+    },
+    {
+        "twitter": "YoSeDelValencia",
+        "id": "1635706597"
+    },
+    {
+        "twitter": "YoSeDelRayo",
+        "id": "1598330394"
+    },
+    {
+        "twitter": "YoSeDelMalaga",
+        "id": "1589058235"
+    },
+    {
+        "twitter": "YoSeDelBetis_",
+        "id": "1646492244"
+    },
+    {
+        "twitter": "YoSeDelGetafe",
+        "id": "1855279153"
+    },
+    {
+        "twitter": "YoSeDelSevilla",
+        "id": "1588883372"
+    },
+    {
+        "twitter": "SeDelVillarreal",
+        "id": "1590490339"
+    },
+    {
+        "twitter": "YoSeDelLevante",
+        "id": "1746246744"
+    },
+    {
+        "twitter": "YoSeDelCelta",
+        "id": "1594344187"
+    },
+    {
+        "twitter": "YoSeDeLaReal",
+        "id": "1635702488"
+    },
+    {
+        "twitter": "YoSeDelgranada",
+        "id": "1590901872"
+    },
+    {
+        "twitter": "YoSeDeldepor",
+        "id": "1715154811"
+    },
+    {
+        "twitter": "YoSeDeLasPalmas",
+        "id": "2157676286"
+    },
+    {
+        "twitter": "YoSeDeLsporting",
+        "id": "1733572027"
+    },
+    {
+        "twitter": "YoSeDeLathletic",
+        "id": "1733355084"
+    },
+    {
+        "twitter": "YoSeDelFCB",
+        "id": "1589265986"
+    },
+    {
+        "twitter": "YoSeDelmadrid",
+        "id": "1593690912"
+    },
+    {
+        "twitter": "Yosedeleibar",
+        "id": "1702982898"
+    },
+    {
+        "twitter": "radiomarca",
+        "id": "17798745"
+    },
+    {
+        "twitter": "miguelangmendez",
+        "id": "111838440"
+    },
+    {
+        "twitter": "directortega",
+        "id": "872222982"
+    },
+    {
+        "twitter": "Sahuqui",
+        "id": "108129464"
+    },
+    {
+        "twitter": "varelarmarca",
+        "id": "150396180"
+    },
+    {
+        "twitter": "LigaBBVA",
+        "id": "16808626"
+    }
+]
