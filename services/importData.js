@@ -40,8 +40,9 @@ exports.addSources = function (aSources){
 	}, function (err){
 		if (!err){
 			console.log('Sources Added. All data import!');
-			//jobScheduling.scheduleRss();
-			jobScheduling.scheduleTwitter();
+
+			// Run Jobs!
+			jobScheduling.scheduleJobs();
 		}
 		else
 			console.log("Error in Sources Addition");
@@ -137,6 +138,22 @@ function addPlayers (fileJSON, idLeague, year, web){
 										season.number = iPlayer.dorsal;
 										season.year = year;
 										player.season.push(season);
+										player.state.available = 0;
+										player.state.state = "";
+									}
+									var foundWeb = 0;
+									for (var i = player.data.length - 1; i >= 0; i--) {
+										if (player.data[i].web === web){
+											player.data[i].url = iPlayer.jugador.href;
+											foundWeb = 1;
+											break;
+										}
+									}
+									if (foundWeb === 0){
+										var dataWeb = {};
+										dataWeb.web = web;
+										dataWeb.url = iPlayer.jugador.href;
+										player.data.push(dataWeb);
 									}
 									player.name = iPlayer.jugador.text;
 									scrapping.scrappingPlayerDataFromWeb(player, iPlayer.jugador.href, web, callbackPlayer);

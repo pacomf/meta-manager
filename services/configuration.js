@@ -4,13 +4,9 @@ var importData = require('./importData.js');
 
 var jsonfile = require('jsonfile');
 
-exports.mockMode = 0;
-
 exports.init = function(app){
 
-	this.mockMode = 0;
-
-	//initLeagueBBVA();
+	initLeagueBBVA();
 
 }
 

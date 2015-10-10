@@ -3,9 +3,23 @@ var Agenda = require('agenda');
 var RssController = require('./rss/rss.js');
 var Config = require('../configuration.js');
 var dbMedia = require('../models/media.model');
+var dbPlayer = require('../models/player.model');
 var TwitterController = require('./social_networks/twitter.js');
 
+var Scrapping = require('./scrapping/scrapping.js');
+
+exports.scheduleJobs = function(){
+	this.scheduleRss();
+	this.scheduleTwitter();
+	this.scheduleStatePlayers();
+}
+
 exports.scheduleRss = function (){
+
+	if (Config.get('mockMode') === 1){
+		console.log("Mock Mode ENABLE: RSS Disable");
+		return;
+	}
 
 	var agenda = new Agenda();
 	agenda.database('localhost:27017/'+Config.get('dbNameJobs'), Config.get('dbNameJobs'));
@@ -13,11 +27,6 @@ exports.scheduleRss = function (){
 
 	// TODO, QUITAR
 	agenda.purge(function(err, numRemoved) {});
-
-	if (Config.mockMode === 1){
-		console.log("Mock Mode ENABLE: Jobs Disable");
-		return;
-	}
 
 	agenda.define('analyzeRss', function(job, done) {
   		var data = job.attrs.data;
@@ -29,7 +38,7 @@ exports.scheduleRss = function (){
 	dbMedia.find({type: 'RSS'}, function (err, rssSources){
 		for (var i = rssSources.length - 1; i >= 0; i--) {
 			job = agenda.create('analyzeRss', {idRss: rssSources[i]._id, urlRss:rssSources[i].url});
-			job.repeatEvery(Config.get('timeRss')+' minutes').save();
+			job.repeatEvery(Config.get('timeRss')).save();
 		};
 		agenda.start();
   		console.log("Jobs RSS run!");
@@ -38,6 +47,12 @@ exports.scheduleRss = function (){
 }
 
 exports.scheduleTwitter = function (){
+
+	if (Config.get('mockMode') === 1){
+		console.log("Mock Mode ENABLE: Twitter Disable");
+		return;
+	}
+
 	dbMedia.find({type: 'Twitter'}, function (err, twitterSources){
 		var users = [];
 		for (var i = twitterSources.length - 1; i >= 0; i--) {
@@ -70,5 +85,39 @@ exports.scheduleTwitter = function (){
   			console.log("Error: Not exist Twitter Sources");
   		}
 	});
+}
+
+exports.scheduleStatePlayers = function (){
+
+	if (Config.get('mockMode') === 1){
+		console.log("Mock Mode ENABLE: Update State Players Disable");
+		return;
+	}
+
+	var agenda = new Agenda();
+	agenda.database('localhost:27017/'+Config.get('dbNameJobs'), Config.get('dbNameJobs'));
+	agenda._db._emitter._maxListeners = 0;
+
+	agenda.define('analyzeStatePlayers', function(job, done) {
+		var data = job.attrs.data;
+		// TODO: Ojo cuidado con esto, que cada vez que actualizo el estado de los jugadores, los seteo todos a AVAILABLE
+		// Durante unos segundos pueden aparecer en el sistema jugadores AVAILABLES cuando NO LO SON
+		dbPlayer.update({}, {$set: {"state.available": 0, "state.state": ""}}, {multi: true} , function(err,numAffected) { 
+			if (!err)
+				Scrapping.scrappingPlayersStateFromWeb(data.web);
+			else
+				console.log("Error to UPDATE ALL Players State to Available");
+			done();
+		});
+  		
+	});
+
+	// Scrapping Web Netliguista for State of Players
+	var job = agenda.create('analyzeStatePlayers', {web: "MARCA"});
+	job.repeatEvery(Config.get('timeStatePlayers')).save();
+
+	agenda.start();
+  	console.log("Job State Players run!");
+
 }
 

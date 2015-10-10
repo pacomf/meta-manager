@@ -7,4 +7,6 @@ langSet: ["es","en"]
 dbAddress: "localhost"
 dbName: "sportmanager"
 dbNameJobs: "sportmanager-jobs"
-timeRss: 10
+timeRss: "10 minutes"
+timeStatePlayers: "6 hours"
+mockMode: 1

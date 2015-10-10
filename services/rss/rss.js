@@ -1,14 +1,6 @@
-
-var configServices = require('../configuration.js');
-
 var analyzeText = require('../analyzeText.js');
 
 exports.readAndProcessRss = function (idRss, urlRss, done){
-
-  if (configServices.mockMode === 1){
-    console.log("Mock Mode ENABLE: Read RSS Disable for "+urlRss);
-    return;
-  }
 
   var now = new Date();
 

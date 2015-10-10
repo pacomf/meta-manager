@@ -9,6 +9,10 @@ var Player = new Schema({
   birthdate: Date,
   fullName: String,
   countryBirth: String,
+  state: {
+    available: Number, // 0: Yes, 1: Maybe, 2: No
+    state: String,
+  },  
   nationality: {
     primary: String,
     secondary: String,
@@ -21,6 +25,10 @@ var Player = new Schema({
     site: String
   }],
   picture: String,
+  data: [{
+    web: String,
+    url: String
+  }],
   season: [{
     team: { type : Schema.Types.ObjectId, ref : 'Team' },
     number: Number,
