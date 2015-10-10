@@ -9,16 +9,19 @@ var Player = new Schema({
   birthdate: Date,
   fullName: String,
   countryBirth: String,
+  role: {
+    name: String,
+    position: Number // 0: GoalKeaper, 1: Defender, 2: Midfielder, 3: Attacker
+  }, 
   state: {
     available: Number, // 0: Yes, 1: Maybe, 2: No
-    state: String,
+    state: String
   },  
   nationality: {
     primary: String,
     secondary: String,
     community: Boolean
-  },
-  role: String,
+  }, 
   keySearch: [String],
   socialNetworks: [{
     name: String,

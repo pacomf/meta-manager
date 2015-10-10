@@ -2,6 +2,8 @@
 
 var importData = require('./importData.js');
 
+var dbPlayer = require('../models/player.model.js');
+
 var jsonfile = require('jsonfile');
 
 exports.init = function(app){

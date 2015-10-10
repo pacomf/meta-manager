@@ -18,7 +18,8 @@ exports.scrappingPlayerDataFromWebMarca = function (player, url, callback){
 			player.picture = parentNode.find($('img[class=foto-jugador]')).attr('src');
 			player.fullName = parentNode.find($('dl dd').get(0)).text();
 			player.birthday = dateWebMarcaFormatToDateStr(parentNode.find($('dl dd').get(1)).text());
-			player.role = parentNode.find($('dl dd').get(6)).text();
+			player.role.name = parentNode.find($('dl dd').get(6)).text();
+			player.role.position = getPositionType(parentNode.find($('dl dd').get(6)).text());
 			player.save();
 
 		} else {
@@ -26,6 +27,26 @@ exports.scrappingPlayerDataFromWebMarca = function (player, url, callback){
 		}
 		callback();
 	});
+}
+
+function getPositionType(position){
+	var reSearchGoalKeeper = new RegExp("Portero", "i");
+	var reSearchDefenders = new RegExp("Defensa|Lateral", "i");
+	var reSearchMidfielders = new RegExp("Medio|Extremo|Interior", "i");
+	var reSearchAttackers = new RegExp("Delantero|Mediapunta", "i");
+    if (position.search(reSearchGoalKeeper) !== -1){
+    	return 0;
+    }
+    if (position.search(reSearchDefenders) !== -1){
+  		return 1;
+    }
+    if (position.search(reSearchMidfielders) !== -1){
+    	return 2;
+    }
+    if (position.search(reSearchAttackers) !== -1){
+    	return 3;
+    }
+    return -1;
 }
 
 // Web Marca Format: DD de MonthInSpanish de YYYY
