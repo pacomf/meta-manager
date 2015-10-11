@@ -2,36 +2,37 @@ var request = require("request");
 var cheerio = require("cheerio");
 var iconv = require('iconv-lite');
 var dbPlayer = require('../../models/player.model');
+var dbPlayerScore = require('../../models/playerScore.model');
 var dbTeam = require('../../models/team.model');
 
 var utilities = require('../utilities.js');
 
 var async = require('async');
 
+var aTeams = [];
+
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=42&id_jornada=0', shortName: 'RCDC'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=21&id_jornada=0', shortName: 'RSF'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=11&id_jornada=0', shortName: 'RCDE'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=9&id_jornada=0', shortName: 'GFC'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=3&id_jornada=0', shortName: 'CAM'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=10&id_jornada=0', shortName: 'UDLP'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=25&id_jornada=0', shortName: 'RVM'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=6&id_jornada=0', shortName: 'VCF'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=18&id_jornada=0', shortName: 'MCF'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=4&id_jornada=0', shortName: 'SFC'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=8&id_jornada=0', shortName: 'ACB'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=2&id_jornada=0', shortName: 'FCB'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=7&id_jornada=0', shortName: 'RSG'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=1&id_jornada=0', shortName: 'RMCF'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=22&id_jornada=0', shortName: 'LUD'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=38&id_jornada=0', shortName: 'RCCV'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=5&id_jornada=0', shortName: 'RBB'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=20&id_jornada=0', shortName: 'VICF'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=36&id_jornada=0', shortName: 'GCF'});
+aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=41&id_jornada=0', shortName: 'SDE'});
+
 exports.scrappingPlayerUrlFromWebNetliga = function (){
-
-	var aTeams = [];
-
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=42&id_jornada=0', shortName: 'RCDC'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=21&id_jornada=0', shortName: 'RSF'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=11&id_jornada=0', shortName: 'RCDE'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=9&id_jornada=0', shortName: 'GFC'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=3&id_jornada=0', shortName: 'CAM'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=10&id_jornada=0', shortName: 'UDLP'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=25&id_jornada=0', shortName: 'RVM'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=6&id_jornada=0', shortName: 'VCF'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=18&id_jornada=0', shortName: 'MCF'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=4&id_jornada=0', shortName: 'SFC'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=8&id_jornada=0', shortName: 'ACB'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=2&id_jornada=0', shortName: 'FCB'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=7&id_jornada=0', shortName: 'RSG'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=1&id_jornada=0', shortName: 'RMCF'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=22&id_jornada=0', shortName: 'LUD'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=38&id_jornada=0', shortName: 'RCCV'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=5&id_jornada=0', shortName: 'RBB'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=20&id_jornada=0', shortName: 'VICF'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=36&id_jornada=0', shortName: 'GCF'});
-	aTeams.push({url: 'http://www.netliga.com/NetLiga/equipos_oficial.jsp?id_equipo=41&id_jornada=0', shortName: 'SDE'});
 
 	var aPositions = ["Portero", "Defensa", "Centrocampista", "Delantero"];
 
@@ -178,7 +179,81 @@ exports.scrappingPlayerUrlFromWebNetliga = function (){
 		} else
 			console.log("Error in Url Players from NetLiga Addition");
 	});
+}
 
-	
+exports.scrappingTotalPlayerScoreFromWebNetliga = function (year){
+
+	var urlRootNetliga = "http://www.netliga.com/NetLiga/";
+
+	async.eachSeries(aTeams, function(team, callbackTeam){
+
+		var requestOptions  = {encoding: null, method: "GET", uri: team.url};
+		request(requestOptions, function (error, response, body) {
+			if (!error) {
+				// Encode of NETLIGA.com
+				var encodeString = iconv.decode(new Buffer(body), "ISO-8859-1");
+				var $ = cheerio.load(encodeString);
+
+				dbTeam.findOne({shortName: team.shortName}, function (err, mTeam){
+					var parentNode = $('table[class="tabla_t1 clear"]');
+					async.eachSeries(parentNode.find($('tr')), function(tr, callbackPlayer){
+						if (!$(tr).hasClass("cabFila")){
+							var children = $(tr).children();
+							var score = $(children[4]).text();
+							var href = urlRootNetliga+$(tr).find($('a')).attr('href');
+							dbPlayer.findOne({data: { $elemMatch: {url: href}}}, function (err, player){
+								if ((player !== undefined) && (player !== null)){
+									dbPlayerScore.findOne({player: player, matchDay: 0, score: { $elemMatch: {media: 'NETLIGA'}}}, function (err, playerScore){
+										if ((playerScore !== undefined) && (playerScore !== null)){
+											async.eachSeries(playerScore.score, function(pScore, callbackPScore){
+												if (pScore.media === 'NETLIGA'){
+													pScore.value = score;
+													callbackPScore({find: 1});
+												} else {
+													callbackPScore();
+												}
+											}, function (err){
+												playerScore.save();
+								    			callbackPlayer();
+								    		});
+										} else {
+											var newPlayerScore = new dbPlayerScore();
+											newPlayerScore.player = player;
+											newPlayerScore.season = year;
+											newPlayerScore.matchDay = 0;
+											var scoreData = {};
+											scoreData.media = 'NETLIGA';
+											scoreData.value = score;
+											newPlayerScore.score.push(scoreData);
+											newPlayerScore.save();
+											callbackPlayer();
+										}
+									});
+									
+								} else {
+									callbackPlayer();
+								}
+
+							}); 
+						} else {
+		 					callbackPlayer(); 			
+		 				}
+		    		}, function (err){
+		    			callbackTeam();
+		    		});
+				});
+
+			} else {
+				console.log("Error: "+error+", Scrapping Score Players from Web Netliga");
+				callbackTeam();
+			}
+		});
+		
+	}, function (err){
+		if (!err){
+			console.log('Updated Score Players from NetLiga');
+		} else
+			console.log("Error Updating Score Players from NetLiga");
+	});
 
 }

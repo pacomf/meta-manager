@@ -9,4 +9,5 @@ dbName: "sportmanager"
 dbNameJobs: "sportmanager-jobs"
 timeRss: "10 minutes"
 timeStatePlayers: "6 hours"
+timeScorePlayers: "1 day"
 mockMode: 1

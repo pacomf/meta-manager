@@ -12,6 +12,7 @@ exports.scheduleJobs = function(){
 	this.scheduleRss();
 	this.scheduleTwitter();
 	this.scheduleStatePlayers();
+	this.scheduleScorePlayers();
 }
 
 exports.scheduleRss = function (){
@@ -112,12 +113,37 @@ exports.scheduleStatePlayers = function (){
   		
 	});
 
-	// Scrapping Web Netliguista for State of Players
+	// Scrapping Web MARCA for State of Players
 	var job = agenda.create('analyzeStatePlayers', {web: "MARCA"});
 	job.repeatEvery(Config.get('timeStatePlayers')).save();
 
 	agenda.start();
   	console.log("Job State Players run!");
+
+}
+
+exports.scheduleScorePlayers = function (){
+
+	if (Config.get('mockMode') === 1){
+		console.log("Mock Mode ENABLE: Update Score Players Disable");
+		return;
+	}
+
+	var agenda = new Agenda();
+	agenda.database('localhost:27017/'+Config.get('dbNameJobs'), Config.get('dbNameJobs'));
+	agenda._db._emitter._maxListeners = 0;
+
+	agenda.define('analyzeScorePlayers', function(job, done) {
+		var data = job.attrs.data;
+		Scrapping.scrappingScorePlayerFromWeb(data.web, data.year);
+	});
+
+	// Scrapping Web Netliga for Score of Players in Netliga
+	var job = agenda.create('analyzeScorePlayers', {web: "NETLIGA", year: 2016});
+	job.repeatEvery(Config.get('timeScorePlayers')).save();
+
+	agenda.start();
+  	console.log("Job Score Players run!");
 
 }
 

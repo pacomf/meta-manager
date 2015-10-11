@@ -13,6 +13,12 @@ exports.scrappingPlayerURLFromWeb = function(web){
 	}
 }
 
+exports.scrappingScorePlayerFromWeb = function(web, year){
+	if (web === "NETLIGA"){
+		scrapping_NETLIGA.scrappingTotalPlayerScoreFromWebNetliga(year);
+	}
+}
+
 exports.scrappingPlayersStateFromWeb = function (web){
 	if (web === "MARCA"){
 		var url = "http://www.marca.com/deporte/futbol/primera-division/lesionados-y-sancionados/";

@@ -168,8 +168,7 @@ function addPlayers (fileJSON, idLeague, year, web){
 							if (!err){
 								console.log('Players Added');
 								importData.initSources();
-								// TODO: Descomentar para añadir URL de NETLIGA
-								//scrapping.scrappingPlayerURLFromWeb("NETLIGA");
+								scrapping.scrappingPlayerURLFromWeb("NETLIGA");
 							} else
 								console.log("Error 2 in Players Addition");
 						});
