@@ -8,8 +8,8 @@ var jsonfile = require('jsonfile');
 
 exports.init = function(app){
 
-	initLeagueBBVA();
-	
+	//initLeagueBBVA();
+
 }
 
 function initLeagueBBVA(){

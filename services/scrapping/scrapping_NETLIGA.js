@@ -203,7 +203,7 @@ exports.scrappingTotalPlayerScoreFromWebNetliga = function (year){
 							var href = urlRootNetliga+$(tr).find($('a')).attr('href');
 							dbPlayer.findOne({data: { $elemMatch: {url: href}}}, function (err, player){
 								if ((player !== undefined) && (player !== null)){
-									dbPlayerScore.findOne({player: player, matchDay: 0, score: { $elemMatch: {media: 'NETLIGA'}}}, function (err, playerScore){
+									dbPlayerScore.findOne({player: player, matchDay: 0}, function (err, playerScore){
 										if ((playerScore !== undefined) && (playerScore !== null)){
 											async.eachSeries(playerScore.score, function(pScore, callbackPScore){
 												if (pScore.media === 'NETLIGA'){
@@ -212,9 +212,18 @@ exports.scrappingTotalPlayerScoreFromWebNetliga = function (year){
 												} else {
 													callbackPScore();
 												}
-											}, function (err){
-												playerScore.save();
-								    			callbackPlayer();
+											}, function (result){
+												if (result){
+													playerScore.save();
+													callbackPlayer();
+												} else{
+													var scoreData = {};
+													scoreData.media = 'NETLIGA';
+													scoreData.value = score;
+													playerScore.score.push(scoreData);
+													playerScore.save();
+													callbackPlayer();
+												}
 								    		});
 										} else {
 											var newPlayerScore = new dbPlayerScore();
@@ -254,6 +263,88 @@ exports.scrappingTotalPlayerScoreFromWebNetliga = function (year){
 			console.log('Updated Score Players from NetLiga');
 		} else
 			console.log("Error Updating Score Players from NetLiga");
+	});
+
+}
+
+
+exports.scrappingByPlayerScoreFromWebNetliga = function (year){
+
+	var urlRootNetliga = "http://www.netliga.com/NetLiga/";
+	var urlScoreNetliga = "http://www.netliga.com/NetLiga/puntos_netliga.jsp";
+
+	var requestOptions  = {encoding: null, method: "GET", uri: urlScoreNetliga};
+	request(requestOptions, function (error, response, body) {
+		if (!error) {
+			// Encode of NETLIGA.com
+			var encodeString = iconv.decode(new Buffer(body), "ISO-8859-1");
+			var $ = cheerio.load(encodeString);
+
+			var parentNode = $('table[class="tabla_t1 clear"]');
+			var matchDay = $('#id_jornada').find(":selected").text().replace("Jornada", "").trim();
+			async.eachSeries(parentNode.find($('tr')), function(tr, callbackPlayer){
+				if (!$(tr).hasClass("cabFila")){
+					var children = $(tr).children();
+					var score = $(children[2]).text();
+					var href = urlRootNetliga+($(tr).find($('a')).attr('onclick').replace("window.open('", "").replace("')", ""));
+
+					dbPlayer.findOne({data: { $elemMatch: {url: href}}}, function (err, player){
+						if ((player !== undefined) && (player !== null)){
+							dbPlayerScore.findOne({player: player, matchDay: matchDay}, function (err, playerScore){
+								if ((playerScore !== undefined) && (playerScore !== null)){
+									async.eachSeries(playerScore.score, function(pScore, callbackPScore){
+										if (pScore.media === 'NETLIGA'){
+											pScore.value = score;
+											callbackPScore({find: 1});
+										} else {
+											callbackPScore();
+										}
+									}, function (result){
+										if (result){
+											playerScore.save();
+											callbackPlayer();
+										} else{
+											var scoreData = {};
+											scoreData.media = 'NETLIGA';
+											scoreData.value = score;
+											playerScore.score.push(scoreData);
+											playerScore.save();
+											callbackPlayer();
+										}
+						    		});
+								} else {
+									var newPlayerScore = new dbPlayerScore();
+									newPlayerScore.player = player;
+									newPlayerScore.season = year;
+									newPlayerScore.matchDay = matchDay;
+									var scoreData = {};
+									scoreData.media = 'NETLIGA';
+									scoreData.value = score;
+									newPlayerScore.score.push(scoreData);
+									newPlayerScore.save();
+									callbackPlayer();
+								}
+							});
+							
+						} else {
+							callbackPlayer();
+						}
+
+					});
+				} else {
+ 					callbackPlayer(); 			
+ 				}
+    		}, function (err){
+    			if (err){
+    				console.log("Error 1: "+err+", Scrapping Score By Players from Web Netliga. ");
+    			} else {
+    				console.log("Updated Score by Players from Netliga");
+    			}
+    		});
+
+		} else {
+			console.log("Error 0: "+error+", Scrapping Score By Players from Web Netliga");
+		}
 	});
 
 }

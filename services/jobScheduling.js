@@ -12,7 +12,8 @@ exports.scheduleJobs = function(){
 	this.scheduleRss();
 	this.scheduleTwitter();
 	this.scheduleStatePlayers();
-	this.scheduleScorePlayers();
+	this.scheduleTotalScorePlayers();
+	this.scheduleScoreByPlayer();
 }
 
 exports.scheduleRss = function (){
@@ -122,10 +123,10 @@ exports.scheduleStatePlayers = function (){
 
 }
 
-exports.scheduleScorePlayers = function (){
+exports.scheduleTotalScorePlayers = function (){
 
 	if (Config.get('mockMode') === 1){
-		console.log("Mock Mode ENABLE: Update Score Players Disable");
+		console.log("Mock Mode ENABLE: Update Total Score Players Disable");
 		return;
 	}
 
@@ -135,15 +136,40 @@ exports.scheduleScorePlayers = function (){
 
 	agenda.define('analyzeScorePlayers', function(job, done) {
 		var data = job.attrs.data;
-		Scrapping.scrappingScorePlayerFromWeb(data.web, data.year);
+		Scrapping.scrappingTotalScorePlayersFromWeb(data.web, data.year);
 	});
 
-	// Scrapping Web Netliga for Score of Players in Netliga
+	// Scrapping Web Netliga for Total Score of Players in Netliga
 	var job = agenda.create('analyzeScorePlayers', {web: "NETLIGA", year: 2016});
 	job.repeatEvery(Config.get('timeScorePlayers')).save();
 
 	agenda.start();
-  	console.log("Job Score Players run!");
+  	console.log("Job Total Score Players run!");
+
+}
+
+exports.scheduleScoreByPlayer = function (){
+
+	if (Config.get('mockMode') === 1){
+		console.log("Mock Mode ENABLE: Update Score By Player Disable");
+		return;
+	}
+
+	var agenda = new Agenda();
+	agenda.database('localhost:27017/'+Config.get('dbNameJobs'), Config.get('dbNameJobs'));
+	agenda._db._emitter._maxListeners = 0;
+
+	agenda.define('analyzeScoreByPlayer', function(job, done) {
+		var data = job.attrs.data;
+		Scrapping.scrappingScoreByPlayerFromWeb(data.web, data.year);
+	});
+
+	// Scrapping Web Netliga for Score of Each Player in Netliga
+	var job = agenda.create('analyzeScoreByPlayer', {web: "NETLIGA", year: 2016});
+	job.repeatEvery(Config.get('timeScorePlayers')).save();
+
+	agenda.start();
+  	console.log("Job Score By Players run!");
 
 }
 

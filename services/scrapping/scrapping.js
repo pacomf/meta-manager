@@ -13,9 +13,15 @@ exports.scrappingPlayerURLFromWeb = function(web){
 	}
 }
 
-exports.scrappingScorePlayerFromWeb = function(web, year){
+exports.scrappingTotalScorePlayersFromWeb = function(web, year){
 	if (web === "NETLIGA"){
 		scrapping_NETLIGA.scrappingTotalPlayerScoreFromWebNetliga(year);
+	}
+}
+
+exports.scrappingScoreByPlayerFromWeb = function(web, year){
+	if (web === "NETLIGA"){
+		scrapping_NETLIGA.scrappingByPlayerScoreFromWebNetliga(year);
 	}
 }
 
