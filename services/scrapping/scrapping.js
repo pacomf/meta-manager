@@ -13,12 +13,16 @@ exports.scrappingPlayerURLFromWeb = function(web){
 	}
 }
 
+// Scrapping Total Score (ALL MATCHES)
 exports.scrappingTotalScorePlayersFromWeb = function(web, year){
 	if (web === "NETLIGA"){
 		scrapping_NETLIGA.scrappingTotalPlayerScoreFromWebNetliga(year);
+	} else if (web === 'MARCA'){ // Scrapping Total Score and Last Match
+		scrapping_MARCA.scrappingByPlayerScoreFromWebMarcaLigaFantastica(year);
 	}
 }
 
+// Scrapping Score Last Match
 exports.scrappingScoreByPlayerFromWeb = function(web, year){
 	if (web === "NETLIGA"){
 		scrapping_NETLIGA.scrappingByPlayerScoreFromWebNetliga(year);

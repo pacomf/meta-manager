@@ -143,6 +143,10 @@ exports.scheduleTotalScorePlayers = function (){
 	var job = agenda.create('analyzeScorePlayers', {web: "NETLIGA", year: 2016});
 	job.repeatEvery(Config.get('timeScorePlayers')).save();
 
+	// Scrapping Web MARCA for Total Score of Players in LIGA FANTASTICA, and Each Player Last Match
+	var job2 = agenda.create('analyzeScorePlayers', {web: "MARCA", year: 2016});
+	job2.repeatEvery(Config.get('timeScorePlayers')).save();
+
 	agenda.start();
   	console.log("Job Total Score Players run!");
 
