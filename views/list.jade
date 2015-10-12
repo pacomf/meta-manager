@@ -1,0 +1,14 @@
+extends layout
+
+block scripts
+  script(src="/scripts/league.list.js")
+
+block content
+  h3 Manage
+  form#createLeague
+    input(name="name" type="text" placeholder="Name")
+    input(name="country" type="text" placeholder="Country")
+    input(name="division" type="text" placeholder="Division")
+    input(type="submit" value="Create")
+
+  ul#list
