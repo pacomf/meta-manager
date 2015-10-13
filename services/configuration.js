@@ -8,6 +8,8 @@ var dbUser = require('../models/user.model.js');
 
 var jsonfile = require('jsonfile');
 
+var config  = require('../configuration.js');
+
 exports.init = function(app){
 
 	//initLeagueBBVA();
@@ -41,7 +43,7 @@ function initLeagueBBVA(){
 	var nameLeague = 'Liga BBVA';
 	var countryLeague = 'Spain';
 	var divisionLeague = '1';
-	var year = 2016;
+	var year = config.get('season');
 	var web = "MARCA";
 
 	console.log("Importing Liga BBVA Data...");

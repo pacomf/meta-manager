@@ -6,16 +6,16 @@ block content
 	a(href='/signout') Sign Out
 
 	ul#myEleven My Eleven
-		- each player in myPlayers
+		each mPlayer in myPlayers.myEleven
 			li
-				- if (player.id !== undefined)
-					a(href='/player/e/'+player.id) #{player.name}
-				- else
-					a #{player.name}
+				if (mPlayer.visible === true)
+					a(href='/player/e/'+mPlayer.player._id) #{mPlayer.player.name}
+				else
+					a #{mPlayer.player.name}
 	ul#myScouting Scouting
-		-each player in myScouting
+		each mPlayer in myPlayers.myScouting
 			li
-				- if (player.id !== undefined)
-					a(href='/player/s/'+player.id) #{player.name}
-				- else
-					a #{player.name}
+				if (mPlayer.visible === true)
+					a(href='/player/s/'+mPlayer.player._id) #{mPlayer.player.name}
+				else
+					a #{mPlayer.player.name}

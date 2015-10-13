@@ -6,3 +6,18 @@ block content
 	a(href='/signout') Sign Out
 
 	h3 Player #{player.name}
+
+	img(src="#{player.picture}")
+
+	if (scoreTotal.score === undefined)
+		p Not Score
+	else
+		h3 Score Total
+		each scoreT in scoreTotal.score
+			p #{scoreT.media} : #{scoreT.value}
+		h3 Score Last Match (Match #{scoreLastDay.matchDay})
+		each scoreL in scoreLastDay.score
+			p #{scoreL.media} : #{scoreL.value}	
+		
+
+	
