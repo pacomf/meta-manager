@@ -6,15 +6,21 @@ var Tree     = require('mongoose-tree');
 
 var MyPlayers = new Schema({
   user: { type : Schema.Types.ObjectId, ref : 'User' },
-  myEleven: [{ type : Schema.Types.ObjectId, ref : 'Player' }],
+  myEleven: [{ 
+    player: {type : Schema.Types.ObjectId, ref : 'Player'},
+    visible: Boolean
+  }],
   formation: {
   	defenders: Number,
   	midfielders: Number,
   	attackers: Number
-  }
-  myScouting: [{ type : Schema.Types.ObjectId, ref : 'Player' }],
+  },
+  myScouting: [{ 
+    player: {type : Schema.Types.ObjectId, ref : 'Player'},
+    visible: Boolean
+  }],
   teamName: String,
-  season: Number
+  season: Number,
 });
 
 MyPlayers.plugin(Tree);

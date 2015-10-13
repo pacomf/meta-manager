@@ -27,11 +27,6 @@ module.exports = function (app, passport) {
     failureFlash : true  
   }));
 
-  /* GET Home Page */
-  app.get('/home', isAuthenticated, function(req, res){
-    res.render('home', { user: req.user });
-  });
-
   /* Handle Logout */
   app.get('/signout', function(req, res) {
     req.logout();
@@ -52,6 +47,17 @@ module.exports = function (app, passport) {
     })
   );
 
+
+
+  var homeController = require('./home.controller');
+
+  /* GET Home Page */
+  app.get('/home', isAuthenticated, homeController.index);
+
+  var playerController = require('./player.controller');
+
+  // :typePlayer is 'e': myEleven, 's': myScouting
+  app.get('/player/:typePlayer/:id', isAuthenticated, playerController.index);
 
 
 

@@ -3,13 +3,15 @@
 var importData = require('./importData.js');
 
 var dbPlayer = require('../models/player.model.js');
+var dbMyPlayers = require('../models/myPlayers.model.js');
+var dbUser = require('../models/user.model.js');
 
 var jsonfile = require('jsonfile');
 
 exports.init = function(app){
 
 	//initLeagueBBVA();
-
+	//mockMyTeam()
 }
 
 function initLeagueBBVA(){
@@ -45,5 +47,37 @@ function initLeagueBBVA(){
 	console.log("Importing Liga BBVA Data...");
 
 	importData.addLeague(nameLeague, countryLeague, divisionLeague, aTeams, './services/assets/playersBBVALite.json', year, web);
+}
+
+// MOCK DATA, DELETE IN RELEASE VERSION
+
+function mockMyTeam(){
+	dbUser.findOne({}, function (err, user){
+		dbMyPlayers.findOne({user: user}, function(err, mMyPlayers){
+			if ((mMyPlayers === null) || (mMyPlayers === undefined)){
+				var newMyPlayers = new dbMyPlayers();
+				newMyPlayers.user = user;
+				dbPlayer.find().limit(16).exec(function(err, mPlayers){
+					for (var i = mPlayers.length - 1; i >= 0; i--) {
+						var player = {}
+						player.player = mPlayers[i];
+						if (i > 4){
+							player.visible = true;
+							newMyPlayers.myEleven.push(player);
+						} else {
+							player.visible = false;
+							newMyPlayers.myScouting.push(player);
+						}
+						if (i === 0){
+							newMyPlayers.save();
+							console.log("My New Mock Team is Loaded");
+						}
+					};
+				});
+			} else {
+				console.log("My Mock Team is Loaded");
+			}
+		});
+	});
 }
 

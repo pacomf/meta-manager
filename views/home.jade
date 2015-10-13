@@ -4,3 +4,18 @@ block content
 	h1 Welcome #{user.name}.
 
 	a(href='/signout') Sign Out
+
+	ul#myEleven My Eleven
+		- each player in myPlayers
+			li
+				- if (player.id !== undefined)
+					a(href='/player/e/'+player.id) #{player.name}
+				- else
+					a #{player.name}
+	ul#myScouting Scouting
+		-each player in myScouting
+			li
+				- if (player.id !== undefined)
+					a(href='/player/s/'+player.id) #{player.name}
+				- else
+					a #{player.name}
