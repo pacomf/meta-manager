@@ -18,6 +18,11 @@ block content
 		h3 Score Last Match (Match #{scoreLastDay.matchDay})
 		each scoreL in scoreLastDay.score
 			p #{scoreL.media} : #{scoreL.value}	
+
+	h3 News
+	each newData in news
+		p #{newData.media.type} | #{newData.media.name}
+		a(href=newData.url) #{newData.title}
 		
 
 	
