@@ -8,7 +8,8 @@ var Team = new Schema({
   name: String,
   fullName: String,
   shortName: String,
-  webSite:String,
+  webSite: String,
+  picture: String,
   socialNetworks: [{
     name: String,
     site: String

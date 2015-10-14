@@ -110,6 +110,7 @@ function addTeams (idLeague, aTeams, jsonPlayers, year, web){
 	}, function (err){
 		if (!err){
 			console.log('Teams Added');
+			importTeamInfo();
 			addPlayers(jsonPlayers, idLeague, year, web);
 		} else
 			console.log("Error in Teams Addition");
@@ -201,5 +202,58 @@ exports.initSources = function(){
 			importData.addSources(aSources);
 			
 		});
+	});
+}
+
+ function importTeamInfo(){
+	var fileJSON = './services/assets/teamsBBVA.json';
+	jsonfile.readFile(fileJSON, { encoding: 'utf8' }, function(err, obj) {
+		if (!err){
+			async.eachSeries(obj, function(team, callback){
+				var picture = team.picture;
+				var twitter = team.twitter;
+				//var web = team.web;
+				var shortName = team.team;
+				dbTeam.findOne({shortName: shortName}, function (err, mTeam){
+					if ((mTeam !== null) && (mTeam !== undefined)){
+						mTeam.picture = picture;
+						//mTeam.web = web;
+						async.eachSeries(mTeam.socialNetworks, function(sn, callbackSN){ 
+							if (sn.name === 'Twitter'){
+								sn.site = twitter;
+								callbackSN({find:1});
+							} else {
+								callbackSN();
+							}
+						}, function (result){
+							if (!result){
+								var socialNetwork = {};
+								socialNetwork.name = 'Twitter';
+								socialNetwork.site = twitter;
+								mTeam.socialNetworks.push(socialNetwork);
+								mTeam.save();
+							} else if (result.find === 1) {
+								mTeam.save();
+							} else {
+								console.log("Error 2 Load Info Team");
+							}
+							callback();
+						});
+					} else {
+						console.log("Team not found: "+shortName);
+						callback();
+					}
+					
+				});
+			}, function (err){
+				if (!err){
+					console.log("Team Info Loaded");
+				} else
+					console.log("Error 1 Load Info Team");
+			});
+			
+		} else {
+			console.log("Error Load Info Team");
+		}
 	});
 }
