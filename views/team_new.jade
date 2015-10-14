@@ -1,0 +1,18 @@
+extends layout
+
+block scripts
+	script(src="/scripts/team.list.js")
+
+block content
+	h1 Welcome #{user.name}.
+
+	a(href='/signout') Sign Out
+
+	h3 New Team
+
+	form(action='/team/add', method="post")
+		div.input
+			span.label Team Name
+			input(type="text", name="name")
+		div.actions
+			input(type="submit", value="Add Team")

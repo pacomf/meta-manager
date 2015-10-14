@@ -59,15 +59,15 @@ function mockMyTeam(){
 			if ((mMyPlayers === null) || (mMyPlayers === undefined)){
 				var newMyPlayers = new dbMyPlayers();
 				newMyPlayers.user = user;
-				dbPlayer.find().limit(16).exec(function(err, mPlayers){
+				dbPlayer.find().limit(11).exec(function(err, mPlayers){
 					for (var i = mPlayers.length - 1; i >= 0; i--) {
 						var player = {}
 						player.player = mPlayers[i];
-						if (i > 4){
+						if (i > 3){
 							player.visible = true;
 							newMyPlayers.myEleven.push(player);
 						} else {
-							player.visible = false;
+							player.visible = true;
 							newMyPlayers.myScouting.push(player);
 						}
 						if (i === 0){

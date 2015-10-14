@@ -1,0 +1,22 @@
+extends layout
+
+block scripts
+	script(src="http://listjs.com/no-cdn/list.js")
+	script(src="/scripts/team.list.js")
+
+block content
+	h1 Welcome #{user.name}.
+
+	a(href='/signout') Sign Out
+
+	br
+
+	div#teams
+		h3 Teams
+		input(class="search" placeholder="Search") 
+		button(class="sort" data-sort="name") Order by Name
+
+		ul(class="list")
+			each mTeam in teams
+				li 
+					a(class="name" href=href='/team/'+mTeam._id+'/players/'+idMyTeam+'/'+typePlayer) #{mTeam.fullName}

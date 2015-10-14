@@ -19,6 +19,10 @@ var MyPlayers = new Schema({
     player: {type : Schema.Types.ObjectId, ref : 'Player'},
     visible: Boolean
   }],
+  monitoringAllowed: {
+    myEleven: {type: Number, default: 11 },
+    myScouting: {type: Number, default: 4 }
+  },
   teamName: String,
   season: Number,
 });

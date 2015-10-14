@@ -48,18 +48,28 @@ module.exports = function (app, passport) {
   );
 
 
-
   var homeController = require('./home.controller');
+  var myTeamController = require('./myTeam.controller');
+  var playerController = require('./player.controller');
+  var teamController = require('./team.controller');
 
   /* GET Home Page */
   app.get('/home', isAuthenticated, homeController.index);
 
-  var playerController = require('./player.controller');
+
+  app.get('/myTeam/:id', isAuthenticated, myTeamController.index);
 
   // :typePlayer is 'e': myEleven, 's': myScouting
   app.get('/player/:typePlayer/:id', isAuthenticated, playerController.index);
 
+  app.get('/team/:id/players/:idMyTeam/:typePlayer', isAuthenticated, playerController.listByTeam);
 
+  app.get('/teams/:idMyTeam/:typePlayer', isAuthenticated, teamController.list);
+
+  app.post('/team/add', isAuthenticated, myTeamController.add);
+  app.get('/team/add', isAuthenticated, myTeamController.newTeam);
+
+  app.post('/team/:idMyTeam/player/:idPlayer/add/:typePlayer', isAuthenticated, myTeamController.addPlayer);
 
   // Jobs
   var agenda = new Agenda();

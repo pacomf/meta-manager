@@ -5,6 +5,10 @@ block content
 
 	a(href='/signout') Sign Out
 
+	br
+
+	h3 #{myPlayers.teamName}
+
 	ul#myEleven My Eleven
 		each mPlayer in myPlayers.myEleven
 			li
@@ -12,6 +16,11 @@ block content
 					a(href='/player/e/'+mPlayer.player._id) #{mPlayer.player.name}
 				else
 					a #{mPlayer.player.name}
+		- var totalPlayers = myPlayers.myEleven.length
+		while totalPlayers<myPlayers.monitoringAllowed.myEleven
+			li
+				a(href='/teams/'+idMyTeam+'/e') Add New Player
+				- totalPlayers++;
 	ul#myScouting Scouting
 		each mPlayer in myPlayers.myScouting
 			li
@@ -19,3 +28,8 @@ block content
 					a(href='/player/s/'+mPlayer.player._id) #{mPlayer.player.name}
 				else
 					a #{mPlayer.player.name}
+		- var totalScouting = myPlayers.myScouting.length
+		while totalScouting<myPlayers.monitoringAllowed.myScouting
+			li
+				a(href='/teams/'+idMyTeam+'/s') Add New Player
+				- totalScouting++;

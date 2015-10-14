@@ -1,0 +1,28 @@
+extends layout
+
+block scripts
+	script(src="http://listjs.com/no-cdn/list.js")
+	script(src="/scripts/player.list.js")
+
+block content
+	h1 Welcome #{user.name}.
+
+	a(href='/signout') Sign Out
+
+	br
+
+	h2 #{team.fullName}
+
+	div#players
+		h3 Players
+		input(class="search" placeholder="Search") 
+		button(class="sort" data-sort="name") Order by Name
+
+		ul(class="list")
+			each mPlayer in players
+				li 
+					h3(class="name") #{mPlayer.name}
+					form(action='/team/'+idMyTeam+'/player/'+mPlayer._id+'/add/'+typePlayer, method="post")
+						div.actions
+							input(type="submit", value="Add To The Team")
+					

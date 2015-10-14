@@ -9,7 +9,8 @@ var User = new Schema({
   socialNetworks: [{
     name: String,
     id: String
-  }]
+  }],
+  maximumTeams: {type: Number, default: 1 }
 });
 
 User.plugin(Tree);
