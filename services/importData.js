@@ -7,6 +7,8 @@ var async = require('async');
 var jsonfile = require('jsonfile');
 var util = require('util');
 
+var utilities = require ('./utilities.js');
+
 var jobScheduling = require('./jobScheduling.js');
 
 var importData = require('./importData.js');
@@ -169,6 +171,7 @@ function addPlayers (fileJSON, idLeague, year, web){
 							if (!err){
 								console.log('Players Added');
 								importData.initSources();
+								importPlayersKeysInfo(year);
 								scrapping.scrappingPlayerURLFromWeb("NETLIGA");
 							} else
 								console.log("Error 2 in Players Addition");
@@ -183,7 +186,7 @@ function addPlayers (fileJSON, idLeague, year, web){
 }
 
 exports.initSources = function(){
-	var fileRss = './services/assets/rss.json';
+	var fileRss = './services/assets/rssLite.json';
 	var fileTwitter = './services/assets/twitter.json';
 
 	jsonfile.readFile(fileRss, { encoding: 'utf8' }, function(err, objRss) {
@@ -256,4 +259,92 @@ exports.initSources = function(){
 			console.log("Error Load Info Team");
 		}
 	});
+}
+
+
+
+function importPlayersKeysInfo(year){
+	var fileJSON = './services/assets/keysPlayersBBVA.json';
+	jsonfile.readFile(fileJSON, { encoding: 'utf8' }, function(err, obj) {
+		if (!err){
+			async.eachSeries(obj, function(player, callback){
+
+				var team = player.team.trim();
+				var number = player.number.trim();
+				var key1 = player.key1;
+				var key2a = player.key2a;
+				var key2b = player.key2b;
+				var key3a = player.key3a;
+				var key3b = player.key3b;
+	
+				dbTeam.findOne({shortName: team}, function (err, mTeam){
+					if (mTeam){
+						if (utilities.isNumber(number)){
+							dbPlayer.findOne({season: { $elemMatch: { team: mTeam, number: number, year: year}}}, function (err, player){
+								if (player){
+									updateKeysPlayer(player, key1, key2a, key2b, key3a, key3b, callback);
+								} else {
+									console.log("Error Load Key for Player for Team: "+team+" Number: "+number);
+									callback();
+								}
+							});
+						} else { // Para casos como los de Arda Turan que aun no tienen dorsal, se busca por el nombre
+							dbPlayer.findOne({name: number, season: { $elemMatch: { team: mTeam, year: year}}}, function (err, player){
+								if (player){
+									updateKeysPlayer(player, key1, key2a, key2b, key3a, key3b, callback);
+								} else {
+									console.log("Error Load Key for Player for Team: "+team+" Name: "+number);
+									callback();
+								}
+							});
+						}
+					} else {
+						console.log("Error 2 Load Player Keys with Team: "+team);
+					}
+				})
+			}, function (err){
+				if (!err){
+					console.log("Keys Players Updated");
+				} else
+					console.log("Error 1 Load Player Keys");
+			});
+			
+		} else {
+			console.log("Error Load Player Keys");
+		}
+	});
+}
+
+function updateKeysPlayer(player, key1, key2a, key2b, key3a, key3b, callback){
+	var key2 = null;
+	if ((key2a) && (key2b)){
+		key2 = key2a + "&&" + key2b;
+	}
+	var key3 = null;
+	if ((key3a) && (key3b)){
+		key3 = key3a + "&&" + key3b;
+	}
+	var foundKey1 = 0;
+	var foundKey2 = 0;
+	var foundKey3 = 0;
+	for (var i = player.keySearch.length - 1; i >= 0; i--) {
+		if (player.keySearch[i] === key1){
+			foundKey1 = 1;
+		} else if (player.keySearch[i] === key2){
+			foundKey2 = 1;
+		} else if (player.keySearch[i] === key3){
+			foundKey3 = 1;
+		}
+	}
+	if ((foundKey1 === 0) && (key1)){
+		player.keySearch.push(key1);
+	}
+	if ((foundKey2 === 0) && (key2)){
+		player.keySearch.push(key2);
+	}
+	if ((foundKey3 === 0) && (key3)){
+		player.keySearch.push(key3);
+	}
+	player.save();
+	callback();
 }

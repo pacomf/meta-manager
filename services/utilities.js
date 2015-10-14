@@ -96,3 +96,7 @@ exports.removeDiacritics = function (str) {
     return str;
 }
 
+exports.isNumber = function (o) {
+  return ! isNaN (o-0) && o !== null && o !== "" && o !== false;
+}
+

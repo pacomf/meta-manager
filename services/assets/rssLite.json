@@ -1,0 +1,10 @@
+[
+    {
+        "nombre": "Marca",
+        "rss": "http://marca.feedsportal.com/rss/futbol_1adivision.xml"
+    },
+    {
+        "nombre": "As",
+        "rss": "http://futbol.as.com/rss/futbol/primera.xml"
+    }
+]
