@@ -5,7 +5,7 @@ var async = require('async');
 
 var utilities = require('./utilities.js');
 
-exports.analyzeText = function(idMedia, dataFilter, link, title, date, type, done){
+exports.analyzeText = function(idMedia, dataFilter, link, title, date, type){
 
   var cleanText = dataFilter;
   if (type === 'RSS')
@@ -15,7 +15,7 @@ exports.analyzeText = function(idMedia, dataFilter, link, title, date, type, don
 
   dbPlayer.find({}, function (err, players){
 
-      async.eachSeries(players, function(player, callback){
+      async.each(players, function(player, callback){
           var keys = player.keySearch;
           var find = 0;
           for (var i = keys.length - 1; i >= 0; i--) {
@@ -51,6 +51,7 @@ exports.analyzeText = function(idMedia, dataFilter, link, title, date, type, don
                     newNews.created_at = date;
                     newNews.save(
                       function(err, product, numberAffected){
+                        console.log("Nueva Noticias!");
                         callback();
                       }
                     );
@@ -66,7 +67,6 @@ exports.analyzeText = function(idMedia, dataFilter, link, title, date, type, don
       }, function(err){
         if (err)
           console.log("Error in Text Analyze: "+type);
-        done();
       });
       
   });

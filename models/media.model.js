@@ -7,6 +7,7 @@ var Tree     = require('mongoose-tree');
 var Media = new Schema({
   name: String,
   url: String,
+  lastNew: Date,
   type: {type: String, enum: ['Twitter','RSS']}
 });
 

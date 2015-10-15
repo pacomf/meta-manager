@@ -82,8 +82,8 @@ exports.scrappingPlayersStateFromWebMarca = function (web, url){
 	    					console.log("Error to Scrapping State Player Injury: "+href);
 	    					callback();
 	    				} else {
-		  					var hrefLast = response.request.uri.href;
-			    			dbPlayer.findOne({data: { $elemMatch: { web: web, url: hrefLast}}}, function (err, player){
+		  					//var hrefLast = response.request.uri.href;
+			    			dbPlayer.findOne({data: { $elemMatch: { web: web, url: href}}}, function (err, player){
 			    				if ((player === null) || (player === undefined)){
 			    					console.log("Error to Scrapping State Player Injury: "+href+" in "+web);
 			    				} else {
@@ -100,10 +100,10 @@ exports.scrappingPlayersStateFromWebMarca = function (web, url){
 				}
     		}, function (err){
 				if (!err){
-					console.log('Update State of Players [Injury]: '+new Date());
+					console.log('Update State of Players [Injury or Sanction]: '+new Date());
 				}
 				else
-					console.log("Error to Scrapping State Players Injury");
+					console.log("Error to Scrapping State Players Injury and Sanction");
 			});
 
 			// To Doubtful Players
@@ -119,8 +119,8 @@ exports.scrappingPlayersStateFromWebMarca = function (web, url){
 	    					console.log("Error to Scrapping State Player Doubtful: "+href);
 	    					callback();
 	    				} else {
-		  					var hrefLast = response.request.uri.href;
-			    			dbPlayer.findOne({data: { $elemMatch: { web: web, url: hrefLast}}}, function (err, player){
+		  					//var hrefLast = response.request.uri.href;
+			    			dbPlayer.findOne({data: { $elemMatch: { web: web, url: href}}}, function (err, player){
 			    				if ((player === null) || (player === undefined)){
 			    					console.log("Error to Scrapping State Player Doubtful: "+href+" in "+web);
 			    				} else {

@@ -1,10 +1,12 @@
 var analyzeText = require('../analyzeText.js');
 
+var dbMedia = require('../../models/media.model');
+
 exports.readAndProcessRss = function (idRss, urlRss, done){
 
   var now = new Date();
 
-  console.log("["+now+"]. Analizando RSS "+urlRss);
+  //console.log("["+now+"]. Analizando RSS "+urlRss);
 
   var FeedParser = require('feedparser')
   , request = require('request');
@@ -21,6 +23,11 @@ exports.readAndProcessRss = function (idRss, urlRss, done){
     if (res.statusCode != 200) return this.emit('error', new Error('Bad status code'));
 
     stream.pipe(feedparser);
+  });
+
+  feedparser.on('end', function() {
+    console.log("Finissssh!");
+    done();
   });
 
 
@@ -43,16 +50,20 @@ exports.readAndProcessRss = function (idRss, urlRss, done){
           var title = item.title;
           thresholdDate.setDate(thresholdDate.getDate() - 2);
           if (date > thresholdDate) {
-            var dataFilter = title;
-            if ((description !== undefined) && (description !== null)){
-              dataFilter = dataFilter+"\n"+description;
-            }
-            analyzeText.analyzeText(idRss, dataFilter, link, title, date, 'RSS', done);
-          } else {
-            done();
+            dbMedia.findById(idRss, function (err, media){
+              if (media){
+                //if ((!media.lastNew) || (date > media.lastNew)) {
+                  var dataFilter = title;
+                  if ((description !== undefined) && (description !== null)){
+                    dataFilter = dataFilter+"\n"+description;
+                  }
+                  media.lastNew = new Date();
+                  media.save();
+                  analyzeText.analyzeText(idRss, dataFilter, link, title, date, 'RSS');
+                //}
+              }
+            });
           }
-      } else {
-        done();
       }
     }
   });

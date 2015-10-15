@@ -10,10 +10,14 @@ var jsonfile = require('jsonfile');
 
 var config  = require('../configuration.js');
 
+var jobScheduling = require('./jobScheduling.js');
+
 exports.init = function(app){
 
 	//initLeagueBBVA();
-	//mockMyTeam()
+
+	// Run Jobs!
+	//jobScheduling.scheduleJobs();
 }
 
 function initLeagueBBVA(){
@@ -48,7 +52,7 @@ function initLeagueBBVA(){
 
 	console.log("Importing Liga BBVA Data...");
 
-	importData.addLeague(nameLeague, countryLeague, divisionLeague, aTeams, './services/assets/playersBBVALite.json', year, web);
+	importData.addLeague(nameLeague, countryLeague, divisionLeague, aTeams, './services/assets/playersBBVA.json', year, web);
 }
 
 // MOCK DATA, DELETE IN RELEASE VERSION

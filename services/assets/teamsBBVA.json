@@ -2,101 +2,121 @@
     {
         "team": "VICF",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/villarreal/img/escudo.gif",
-        "twitter": "VillarrealCF"
+        "twitter": "VillarrealCF",
+        "web": "http://www.villarrealcf.es/"
     },
     {
         "team": "ACB",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/athletic/img/escudo.gif",
-        "twitter": "AtheticClub"
+        "twitter": "AtheticClub",
+        "web": "http://www.athletic-club.eus/prehome.html"
     },
     {
         "team": "CAM",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/atletico/img/escudo.gif",
-        "twitter": "Atleti"
+        "twitter": "Atleti",
+        "web": "http://clubatleticodemadrid.com/"
     },
     {
         "team": "MCF",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/malaga/img/escudo.gif",
-        "twitter": "MalagaCF"
+        "twitter": "MalagaCF",
+        "web": "http://www.malagacf.com/"
     },
     {
         "team": "LUD",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/levante/img/escudo.gif",
-        "twitter": "LevanteUD"
+        "twitter": "LevanteUD",
+        "web": "http://www.levanteud.com/es/"
     },
     {
         "team": "RCCV",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/celta/img/escudo.png",
-        "twitter": "Rccelta_oficial"
+        "twitter": "Rccelta_oficial",
+        "web": "http://www.levanteud.com/es/"
     },
     {
         "team": "RCDC",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/deportivo/img/escudo.gif",
-        "twitter": "RCDeportivo"
+        "twitter": "RCDeportivo",
+        "web": "http://www.canaldeportivo.com/"
     },
     {
         "team": "SDE",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/eibar/img/escudo.png",
-        "twitter": "Sdeibar"
+        "twitter": "Sdeibar",
+        "web": "http://www.sdeibar.com/"
     },
     {
         "team": "RCDE",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/espanyol/img/escudo.gif",
-        "twitter": "RCDEspanyol"
+        "twitter": "RCDEspanyol",
+        "web": "http://www.rcdespanyol.com/"
     },
     {
         "team": "RBB",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/betis/img/escudo.gif",
-        "twitter": "RealBetis"
+        "twitter": "RealBetis",
+        "web": "http://www.realbetisbalompie.es/es/"
     },
     {
         "team": "SFC",
-        "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/sevilla/img/escudo.gif",
-        "twitter": "SevillaFC"
+        "picture": "estaticos04.marca.com/deporte/futbol/equipos/sevilla/img/escudo.gif",
+        "twitter": "SevillaFC",
+        "web": "http://sevillafc.es/"
     },
     {
         "team": "VCF",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/valencia/img/escudo.gif",
-        "twitter": "Valenciacf"
+        "twitter": "Valenciacf",
+        "web": "https://www.realsporting.com/"
     },
     {
         "team": "RSG",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/sporting/img/escudo.gif",
-        "twitter": "Realsporting"
+        "twitter": "Realsporting",
+        "web": "http://www.valenciacf.com/portadas/splash"
     },
     {
         "team": "UDLP",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/las-palmas/img/escudo.png",
-        "twitter": "UDLP_oficial"
+        "twitter": "UDLP_oficial",
+        "web": "http://www.udlaspalmas.es/"
     },
     {
         "team": "RSF",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/real-sociedad/img/escudo.png",
-        "twitter": "Realsociedad"
+        "twitter": "Realsociedad",
+        "web": "http://www.realsociedad.com/"
     },
     {
         "team": "GFC",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/getafe/img/escudo.png",
-        "twitter": "GetafeCF"
+        "twitter": "GetafeCF",
+        "web": "http://www.getafecf.com/"
     },
     {
         "team": "GCF",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/granada/img/escudo.gif",
-        "twitter": "GranadaCdeF"
+        "twitter": "GranadaCdeF",
+        "web": "http://www.granadacf.es/es/"
     },
     {
         "team": "RVM",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/rayo/img/escudo.gif",
-        "twitter": "RVMOficial"
+        "twitter": "RVMOficial",
+        "web": "http://www.rayovallecano.es/"
     },
     {
         "team": "RMCF",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/real-madrid/img/escudo.gif",
-        "twitter": "Realmadrid"
+        "twitter": "Realmadrid",
+        "web": "http://www.realmadrid.com/en"
     },
     {
         "team": "FCB",
         "picture": "http://estaticos04.marca.com/deporte/futbol/equipos/barcelona/img/escudo.gif",
-        "twitter": "FCBarcelona_es"
+        "twitter": "FCBarcelona_es",
+        "web": "http://www.fcbarcelona.com/"
     }
 ]

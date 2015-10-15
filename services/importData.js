@@ -9,8 +9,6 @@ var util = require('util');
 
 var utilities = require ('./utilities.js');
 
-var jobScheduling = require('./jobScheduling.js');
-
 var importData = require('./importData.js');
 
 var scrapping = require('./scrapping/scrapping.js');
@@ -42,9 +40,6 @@ exports.addSources = function (aSources){
 	}, function (err){
 		if (!err){
 			console.log('Sources Added. All data import!');
-
-			// Run Jobs!
-			jobScheduling.scheduleJobs();
 		}
 		else
 			console.log("Error in Sources Addition");
@@ -186,7 +181,7 @@ function addPlayers (fileJSON, idLeague, year, web){
 }
 
 exports.initSources = function(){
-	var fileRss = './services/assets/rssLite.json';
+	var fileRss = './services/assets/rss.json';
 	var fileTwitter = './services/assets/twitter.json';
 
 	jsonfile.readFile(fileRss, { encoding: 'utf8' }, function(err, objRss) {
@@ -215,12 +210,12 @@ exports.initSources = function(){
 			async.eachSeries(obj, function(team, callback){
 				var picture = team.picture;
 				var twitter = team.twitter;
-				//var web = team.web;
+				var web = team.web;
 				var shortName = team.team;
 				dbTeam.findOne({shortName: shortName}, function (err, mTeam){
 					if ((mTeam !== null) && (mTeam !== undefined)){
 						mTeam.picture = picture;
-						//mTeam.web = web;
+						mTeam.webSite = web;
 						async.eachSeries(mTeam.socialNetworks, function(sn, callbackSN){ 
 							if (sn.name === 'Twitter'){
 								sn.site = twitter;

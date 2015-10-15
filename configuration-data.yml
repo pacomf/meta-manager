@@ -7,10 +7,10 @@ langSet: ["es","en"]
 dbAddress: "localhost"
 dbName: "sportmanager"
 dbNameJobs: "sportmanager-jobs"
-timeRss: "10 minutes"
+timeRss: "30 minutes"
 timeStatePlayers: "6 hours"
 timeScorePlayers: "1 day"
-mockMode: 1
+mockMode: 0
 facebook_app_id: "1666951186896725"
 facebook_app_secret: "3d762a6b82c4da65b8e956ed33214096"
 season: 2016
