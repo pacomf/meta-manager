@@ -9,10 +9,10 @@ var TwitterController = require('./social_networks/twitter.js');
 var Scrapping = require('./scrapping/scrapping.js');
 
 exports.scheduleJobs = function(){
-	//this.scheduleRss();
-	//this.scheduleTwitter();
-	//this.scheduleStatePlayers();
-	//this.scheduleTotalScorePlayers();
+	this.scheduleRss();
+	this.scheduleTwitter();
+	this.scheduleStatePlayers();
+	this.scheduleTotalScorePlayers();
 	this.scheduleScoreByPlayer();
 }
 
