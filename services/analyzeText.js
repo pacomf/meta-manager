@@ -51,7 +51,7 @@ exports.analyzeText = function(idMedia, dataFilter, link, title, date, type){
                     newNews.created_at = date;
                     newNews.save(
                       function(err, product, numberAffected){
-                        console.log("Nueva Noticias!");
+                        //console.log("Nueva Noticias!");
                         callback();
                       }
                     );

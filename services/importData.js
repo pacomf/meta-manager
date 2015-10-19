@@ -39,7 +39,7 @@ exports.addSources = function (aSources){
 		});
 	}, function (err){
 		if (!err){
-			console.log('Sources Added. All data import!');
+			console.log('Sources Added');
 		}
 		else
 			console.log("Error in Sources Addition");

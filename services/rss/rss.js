@@ -26,7 +26,6 @@ exports.readAndProcessRss = function (idRss, urlRss, done){
   });
 
   feedparser.on('end', function() {
-    console.log("Finissssh!");
     done();
   });
 
@@ -52,7 +51,7 @@ exports.readAndProcessRss = function (idRss, urlRss, done){
           if (date > thresholdDate) {
             dbMedia.findById(idRss, function (err, media){
               if (media){
-                //if ((!media.lastNew) || (date > media.lastNew)) {
+                if ((!media.lastNew) || (date > media.lastNew)) {
                   var dataFilter = title;
                   if ((description !== undefined) && (description !== null)){
                     dataFilter = dataFilter+"\n"+description;
@@ -60,7 +59,7 @@ exports.readAndProcessRss = function (idRss, urlRss, done){
                   media.lastNew = new Date();
                   media.save();
                   analyzeText.analyzeText(idRss, dataFilter, link, title, date, 'RSS');
-                //}
+                }
               }
             });
           }

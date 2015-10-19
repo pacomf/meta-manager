@@ -7,8 +7,8 @@ langSet: ["es","en"]
 dbAddress: "localhost"
 dbName: "sportmanager"
 dbNameJobs: "sportmanager-jobs"
-timeRss: "30 minutes"
-timeStatePlayers: "6 hours"
+timeRss: "23 minutes"
+timeStatePlayers: "5 hours"
 timeScorePlayers: "1 day"
 mockMode: 0
 facebook_app_id: "1666951186896725"

@@ -7,6 +7,8 @@ var dbTeam = require('../../models/team.model');
 
 var utilities = require('../utilities.js');
 
+var jsonfile = require('jsonfile');
+
 var async = require('async');
 
 var aTeams = [];
@@ -110,47 +112,7 @@ exports.scrappingPlayerUrlFromWebNetliga = function (){
 										if (!result){
 											// TODO: ¿Que hacer con estos jugadores NO ENCONTRADOS?
 											// El problema es que NETLIGA tiene el nombre MAL o son jugadores
-											// que no aparecen en MARCA
-											/*
-											Real Sociedad:RSF|ENEKO CAPILLA
-											Las Palmas:UDLP|CARLOS GUTIERREZ
-											Rayo:RVM|PABLO CLAVERIA
-											Rayo:RVM|ISI
-											Valencia:VCF|TROPI
-											Valencia:VCF|RODRIGO DEPAUL
-											Málaga:MCF|JUANCARLOS
-											Sevilla:SFC|STEVEN N`ZONZI
-											Sevilla:SFC|KROHN DELHI
-											Sevilla:SFC|INMOBILE
-											Sevilla:SFC|IVI
-											Bilbao:ACB|RAMALHO
-											Bilbao:ACB|SABORIT
-											Bilbao:ACB|GURPEGUI
-											Bilbao:ACB|UNAI
-											Barcelona:FCB|ALEIX VIDAL
-											Barcelona:FCB|ARDA TURAN
-											Sporting:RSG|PICHU CUELLAR
-											Sporting:RSG|JULIO
-											Sporting:RSG|MENDI
-											Real Madrid:RMCF|ODEGAARD
-											Levante:LUD|JOSEMARI
-											Celta:RCCV|AUGUSTO FDEZ
-											Celta:RCCV|BORJA
-											Betis:RBB|JORDI FIGUERAS
-											Betis:RBB|N`DIAYE
-											Betis:RBB|FOUED KADIR
-											Betis:RBB|MATILLA
-											Villareal:VICF|MARIO BARBOSA
-											Villareal:VICF|AITOR FERNANDEZ
-											Villareal:VICF|FELIPE ALFONSO
-											Villareal:VICF|ALFONSO PEDRAZA
-											Villareal:VICF|FRAN SOL
-											Granada:GCF|KELEVA
-											Granada:GCF|MASAVU KING
-											Granada:GCF|SULAYMAN
-											Granada:GCF|ISSAC SUCCESS
-											Eibar:SDE|THAYLOR
-											*/
+											// que no aparecen en MARCA (de momento lo carga a mano más abajo, desde un JSON)
 											//console.log(mTeam.name+":"+mTeam.shortName+"|"+name);
 										}
 	              						callbackPlayer();
@@ -175,9 +137,53 @@ exports.scrappingPlayerUrlFromWebNetliga = function (){
 		
 	}, function (err){
 		if (!err){
-			console.log('Url Players from NetLiga Added');
+			//console.log('Url Players from NetLiga Added');
+			// TODO: Cambiar esto a una forma más ortodoxa
+			importURLFromJSON("NETLIGA", 2016)
 		} else
 			console.log("Error in Url Players from NetLiga Addition");
+	});
+}
+
+function importURLFromJSON(web, year){
+	var fileJSON = './services/assets/netligaPlayersFailBBVA.json';
+
+	jsonfile.readFile(fileJSON, { encoding: 'utf8' }, function(err, json) {
+		async.eachSeries(json, function(obj, callback){
+			var team = obj.team;
+			var number = obj.number;
+			var url = obj.netliga;
+			dbTeam.findOne({shortName: team}, function (err, mTeam){
+				dbPlayer.findOne({season: { $elemMatch: { team: mTeam, number: number, year: year}}}, function (err, player){
+					if ((player !== null) && (player !== undefined)){
+						var foundWeb = 0;
+						for (var i = player.data.length - 1; i >= 0; i--) {
+							if (player.data[i].web === web){
+								player.data[i].url = url;
+								foundWeb = 1;
+								break;
+							}
+						}
+						if (foundWeb === 0){
+							var dataWeb = {};
+							dataWeb.web = web;
+							dataWeb.url = url;
+							player.data.push(dataWeb);
+						}
+						player.save();
+						callback();
+					} else {
+						console.log("Error MANUAL IMPORT Netliga: "+team+":"+number);
+						callback();
+					}
+				});
+			});
+		}, function (err){
+			if (!err){
+				console.log('Manual Url Players from NetLiga Added');
+			} else
+				console.log("Error in Manual Url Players from NetLiga Addition");
+		});
 	});
 }
 

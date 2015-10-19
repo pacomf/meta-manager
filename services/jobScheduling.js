@@ -13,7 +13,7 @@ exports.scheduleJobs = function(){
 	//this.scheduleTwitter();
 	//this.scheduleStatePlayers();
 	//this.scheduleTotalScorePlayers();
-	//this.scheduleScoreByPlayer();
+	this.scheduleScoreByPlayer();
 }
 
 exports.scheduleRss = function (){
@@ -41,9 +41,6 @@ exports.scheduleRss = function (){
 		for (var i = rssSources.length - 1; i >= 0; i--) {
 			job = agenda.create('analyzeRss', {idRss: rssSources[i]._id, urlRss:rssSources[i].url});
 			job.repeatEvery(Config.get('timeRss')).save();
-			//TODO: QUITAR
-			if (i === rssSources.length - 10)
-				break;
 		};
 		agenda.start();
   		console.log("Jobs RSS run!");
