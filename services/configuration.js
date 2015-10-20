@@ -12,7 +12,7 @@ var config  = require('../configuration.js');
 
 exports.init = function(app){
 
-	initLeagueBBVA();
+	//initLeagueBBVA();
 
 	// TODO: Para lanzar el <node jobs> hace falta esperar que en el <node app> aparezcan los siguientes mensajes
 	//       Pueden aparecer en distinto orden, ya que son asincronos (solo algunos, a partir de Players Added)
@@ -58,7 +58,7 @@ function initLeagueBBVA(){
 
 	console.log("Importing Liga BBVA Data...");
 
-	importData.addLeague(nameLeague, countryLeague, divisionLeague, aTeams, './services/assets/playersBBVA.json', year, web);
+	importData.addLeague(nameLeague, countryLeague, divisionLeague, aTeams, './services/assets/playersBBVALite.json', year, web);
 }
 
 // MOCK DATA, DELETE IN RELEASE VERSION
